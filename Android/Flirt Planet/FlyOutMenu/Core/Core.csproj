@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A22CF665-59E4-48B3-81B5-AFEE3953821C}</ProjectGuid>
+    <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Core</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>Core</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignKey>iPhone Developer</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Business\BoostBus.cs" />
+    <Compile Include="Business\BusinessBase.cs" />
+    <Compile Include="Business\ConnectionBus.cs" />
+    <Compile Include="Business\FlirtmailBus.cs" />
+    <Compile Include="Business\GeoBus.cs" />
+    <Compile Include="Business\HomeBus.cs" />
+    <Compile Include="Business\MatchingSauceBus.cs" />
+    <Compile Include="Business\MeetBus.cs" />
+    <Compile Include="Business\ProfileBus.cs" />
+    <Compile Include="Business\SettingsBus.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="Data\AppUser.cs" />
+    <Compile Include="Data\Connection.cs" />
+    <Compile Include="Data\DetailAnswer.cs" />
+    <Compile Include="Data\DetailQuestion.cs" />
+    <Compile Include="Data\Entourage.cs" />
+    <Compile Include="Data\ExternalFriend.cs" />
+    <Compile Include="Data\FBPhoto.cs" />
+    <Compile Include="Data\Country.cs" />
+    <Compile Include="Data\FBPhotoAlbum.cs" />
+    <Compile Include="Data\FlirtJuice.cs" />
+    <Compile Include="Data\Flirtmail.cs" />
+    <Compile Include="Data\Goal.cs" />
+    <Compile Include="Data\Item.cs" />
+    <Compile Include="Data\Location.cs" />
+    <Compile Include="Data\Match.cs" />
+    <Compile Include="Data\MatchingSauce.cs" />
+    <Compile Include="Data\MeetFetcher.cs" />
+    <Compile Include="Data\Notifications.cs" />
+    <Compile Include="Data\PendingConnection.cs" />
+    <Compile Include="Data\Photo.cs" />
+    <Compile Include="Data\Region.cs" />
+    <Compile Include="Data\Review.cs" />
+    <Compile Include="Data\SecondOpinion.cs" />
+    <Compile Include="Data\SentConnection.cs" />
+    <Compile Include="Data\Settings.cs" />
+    <Compile Include="Data\User.cs" />
+    <Compile Include="Data\Visitor.cs" />
+    <Compile Include="Data\Watched.cs" />
+    <Compile Include="Logger.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\Components\json.net-4.5.11\lib\android\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.MonoTouch.CSharp.targets" />
+  <ItemGroup>
+    <XamarinComponentReference Include="json.net">
+      <Version>4.5.11</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,2 @@
+RadialProgress.Android.Sample.MainActivity;radialprogress.android.sample.MainActivity
+RadialProgress.RadialProgressView;radialprogress.RadialProgressView

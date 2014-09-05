@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="add_photo_options">
+        <item>Take a photo</item>
+        <item>Choose a photo</item>
+    </string-array>
+   
+    <integer-array name="contacts_sync_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </integer-array>
+    <string-array name="contacts_sync_values_redesign">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+    <string-array name="edit_photo_options">
+        <item>Take a photo</item>
+        <item>Choose a photo</item>
+        <item>Delete photo</item>
+    </string-array>
+    <string-array name="hosts">
+        <item>PROD</item>
+        <item>EI</item>
+    </string-array>
+    <string-array name="influencer_menu">
+        <item>Connect</item>
+        <item>Forward Profile</item>
+    </string-array>
+    <string-array name="findMeOptions">
+        <item>Males looking for Males</item>
+        <item>Males looking for Females</item>
+        <item>Females looking for Males</item>
+        <item>Females looking for Females</item>
+        <item>Anyone looking for Males</item>
+        <item>Anyone looking for Females</item>
+    </string-array>
+      <string-array name="distanceOptions">
+        <item>5 miles</item>
+        <item>10 miles</item>
+        <item>25 miles</item>
+        <item>50 miles</item>
+        <item>100 miles</item>
+        <item>500 miles</item>
+		<item>Anywhere</item>
+    </string-array>
+    <string-array name="months">
+        <item>Jan</item>
+        <item>Feb</item>
+        <item>Mar</item>
+        <item>Apr</item>
+        <item>May</item>
+        <item>Jun</item>
+        <item>Jul</item>
+        <item>Aug</item>
+        <item>Sep</item>
+        <item>Oct</item>
+        <item>Nov</item>
+        <item>Dec</item>
+    </string-array>
+    <string-array name="photo_options">
+        <item>Camera</item>
+        <item>Photo gallery</item>
+    </string-array>
+    <string-array name="photo_options_with_view">
+        <item>View Photo</item>
+        <item>Take a photo</item>
+        <item>Choose a photo</item>
+    </string-array>
+    <string-array name="photo_options_without_view">
+        <item>Take a photo</item>
+        <item>Choose a photo</item>
+    </string-array>
+    <string-array name="retry_handler_choices">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="retry_handler_choices_text">
+        <item>Default retry</item>
+        <item>Socket timeout retry</item>
+        <item>Exception retry</item>
+    </string-array>
+    <string-array name="status_visibility">
+        <item>Anyone</item>
+        <item>Connections only</item>
+    </string-array>
+    <string-array name="twitter_options">
+        <item>Reply</item>
+        <item>Retweet</item>
+        <item>Favorite</item>
+    </string-array>
+    <string-array name="unfollow_menu">
+        <item>Stop Following</item>
+        <item>Cancel</item>
+    </string-array>
+</resources>
+

@@ -1,0 +1,1 @@
+<shape android:id="@+id/orange_border" xmlns:android="http://schemas.android.com/apk/res/android"><stroke android:width="8dp" android:color="#ffe68523" /><padding android:left="0dp" android:top="0dp" android:right="0dp" android:bottom="0dp" /><corners android:radius="0dp" /><solid android:color="#ff000000" /></shape>

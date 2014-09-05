@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_color"
+    android:gravity="center">
+    <ImageView
+        android:src="@android:drawable/ic_menu_gallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/iv_wavatar"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:text="Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_watchlist_name"
+        android:textColor="#ff474444"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:layout_below="@id/iv_wavatar"
+        android:layout_centerHorizontal="true" />
+    <ImageView
+        android:src="@drawable/DD_icn_connect"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/iv_connect"
+        android:layout_marginBottom="3dp"
+        android:scaleType="centerInside"
+        android:cropToPadding="false"
+        android:layout_weight="1"
+        android:layout_below="@id/tv_watchlist_name"
+        android:layout_centerHorizontal="true" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:background="@color/background_color"
+        android:layout_below="@id/iv_connect"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true">
+        <ImageView
+            android:src="@drawable/DD_icn_drop"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:id="@+id/iv_drop"
+            android:scaleType="centerInside"
+            android:cropToPadding="false"
+            android:layout_below="@id/iv_connect"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_drop"
+            android:textColor="#ff474444"
+            android:layout_toRightOf="@+id/iv_drop"
+            android:text="99"
+            android:layout_below="@id/iv_connect"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+</RelativeLayout>

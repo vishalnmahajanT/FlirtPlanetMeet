@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:background="@color/background_color">
+        <TextView
+            android:id="@+id/tv_welcomeback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Welcome Back Abc!"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/text_grey"
+            android:layout_marginTop="10dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/view1"
+            android:background="@color/solid_white"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fresh Faces"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/text_grey" />
+        <TableLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tl_freshfaces">
+            <TableRow
+                android:id="@+id/tableRow1">
+                <ImageView
+                    android:src="@drawable/DD_MS_icn_menu_meet"
+                    android:layout_column="0"
+                    android:id="@+id/iv_freshFace0"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:src="@drawable/DD_MS_icn_menu_meet"
+                    android:layout_column="1"
+                    android:id="@+id/iv_freshFace1"
+                    android:layout_width="0dp"
+                    android:layout_weight="1" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow2">
+                <ImageView
+                    android:src="@drawable/DD_MS_icn_menu_meet"
+                    android:layout_column="0"
+                    android:id="@+id/iv_freshFace2"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerInside" />
+                <ImageView
+                    android:src="@drawable/DD_MS_icn_menu_meet"
+                    android:layout_column="1"
+                    android:id="@+id/iv_freshFace3"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerInside" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow3">
+                <ImageView
+                    android:src="@drawable/DD_MS_icn_menu_meet"
+                    android:layout_column="0"
+                    android:id="@+id/iv_freshFace4"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerInside" />
+                <ImageView
+                    android:src="@drawable/DD_MS_icn_menu_meet"
+                    android:layout_column="1"
+                    android:id="@+id/iv_freshFace5"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerInside" />
+            </TableRow>
+        </TableLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/view1"
+            android:background="@color/solid_white"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp" />
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+            <TextView
+                android:text="Profile Progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView3"
+                android:textColor="@color/text_grey"
+                android:layout_marginLeft="15dp" />
+        <!-- <View
+                android:id="@+id/view1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textView3"
+                android:layout_margin="8dp"
+                android:background="#ffffffff" /> -->
+            <ImageView
+                android:id="@+id/rp_goal"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/textView3"
+                android:scaleType="centerInside" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/ll_visitors"
+                android:clickable="true"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp">
+                <TextView
+                    android:id="@+id/tv_visitorCount"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/textView3"
+                    android:gravity="center"
+                    android:text="0 people"
+                    android:textColor="@color/aqua_blue" />
+                <TextView
+                    android:id="@+id/tv_visited"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView4"
+                    android:layout_below="@+id/textView4"
+                    android:text="Have visited your profile"
+                    android:textColor="@color/text_grey" />
+            </LinearLayout>
+        </RelativeLayout>
+        <include
+            layout="@layout/footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/include1" />
+    </LinearLayout>
+</ScrollView>

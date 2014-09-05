@@ -1,0 +1,2 @@
+D:\Data\Flirt Planet\Components\radialprogress-1.0.1\samples\RadialProgress.Android.Sample\bin\Debug\RadialProgress.Android.Sample.dll
+D:\Data\Flirt Planet\Components\radialprogress-1.0.1\lib\android\RadialProgress.Android.dll

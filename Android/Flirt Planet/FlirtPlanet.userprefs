@@ -1,0 +1,29 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.480" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="FlyOutMenu\HelloFacebookSampleActivity.cs">
+    <Files>
+      <File FileName="FlyOutMenu\HelloFacebookSampleActivity.cs" Line="1" Column="1" />
+      <File FileName="FlyOutMenu\FlirtPlanetActivity.cs" Line="1" Column="1" />
+      <File FileName="FlyOutMenu\ImageHelper\UrlImageViewHelper.cs" Line="1" Column="1" />
+      <File FileName="FlyOutMenu\CircleDrawable.cs" Line="1" Column="1" />
+      <File FileName="FlyOutMenu\Adapters\asynchAdapter.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/administrator/Desktop/24-05/FlyOutMenu/FlyOutContainer.cs" line="245" column="1" />
+      <Breakpoint file="/Users/administrator/Desktop/24-05/FlyOutMenu/FlyOutContainer.cs" line="259" column="1" />
+      <Breakpoint file="/Users/administrator/Desktop/31-5/FlyOutMenu/DrawerSampleActivity.cs" line="128" column="1" />
+      <Breakpoint file="D:\Project\VIshal\28-7\Flirt Planet\FlyOutMenu\FlirtPlanetActivity.cs" line="872" column="1" />
+      <Breakpoint file="D:\Project\VIshal\28-7\Flirt Planet\FlyOutMenu\FlirtPlanetActivity.cs" line="750" column="3" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="FlyOutMenu\FlyOutContainer.cs" line="148" offsetX="578" offsetY="2205" expression="ContentView.Context" liveUpdate="False" />
+    <Watch file="FlyOutMenu\Fragments\FragmentHome.cs" line="48" offsetX="717" offsetY="705" expression="freshFacesArray" liveUpdate="False" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
+  <DisabledProjects>
+    <String>..\..\Downloads\DrawerSample-master\DrawerSample.csproj</String>
+  </DisabledProjects>
+  <MonoDevelop.Ide.ItemProperties.FlirtPlanet MonoForAntroid.PreferredDevice="Nexus 4" />
+</Properties>

@@ -1,0 +1,11 @@
+com.facebook.AccessTokenSource:Xamarin.FacebookBinding:AccessTokenSource
+com.facebook.FacebookRequestError$Category:Xamarin.FacebookBinding:FacebookRequestError.Category
+com.facebook.HttpMethod:Xamarin.FacebookBinding:HttpMethod
+com.facebook.LoggingBehavior:Xamarin.FacebookBinding:LoggingBehavior
+com.facebook.Response$PagingDirection:Xamarin.FacebookBinding:Response.PagingDirection
+com.facebook.SessionDefaultAudience:Xamarin.FacebookBinding:SessionDefaultAudience
+com.facebook.SessionLoginBehavior:Xamarin.FacebookBinding:SessionLoginBehavior
+com.facebook.SessionState:Xamarin.FacebookBinding:SessionState
+com.facebook.SessionState$Category:Xamarin.FacebookBinding:SessionState.Category
+com.facebook.TestSession$Mode:Xamarin.FacebookBinding:TestSession.Mode
+com.facebook.internal.SessionAuthorizationType:Xamarin.FacebookBinding.Internal:SessionAuthorizationType

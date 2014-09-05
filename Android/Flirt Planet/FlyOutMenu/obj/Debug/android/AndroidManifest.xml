@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionName="1.0" package="com.trulysocialapps.digitaldating" android:installLocation="auto" android:largeHeap="true" android:versionCode="5">
+  <uses-sdk android:minSdkVersion="14" />
+  <application android:label="FlirtPlanet" android:icon="@drawable/icon" android:debuggable="false" android:name="mono.android.app.Application">
+    <activity android:name="com.facebook.LoginActivity" android:theme="@style/FlirtTheme" android:screenOrientation="portrait" android:label="Flirt Planet" />
+    <service android:name="flirtplanet.MyC2dmReceiver" />
+    <receiver android:name="flirtplanet.MyC2dmReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+      <intent-filter>
+        <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+        <category android:name="com.trulysocialapps.digitaldating" />
+      </intent-filter>
+      <intent-filter>
+        <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+        <category android:name="com.trulysocialapps.digitaldating" />
+      </intent-filter>
+    </receiver>
+    <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/app_id" />
+    <activity android:label="PreferencesQuiz" android:name="flirtplanet.PreferencesQuiz" />
+    <activity android:icon="@drawable/icon" android:label="SlidingPane Sample" android:name="flirtplanet.SlidingPaneLayoutActivity" />
+    <activity android:label="Flirt Planet" android:theme="@android:style/Theme.Holo.Light.DarkActionBar" android:name="flirtplanet.FragmentNewUserSignUp" />
+    <activity android:label="Flirt Planet" android:screenOrientation="portrait" android:theme="@style/FlirtTheme" android:name="flirtplanet.FlirtPlanetActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <activity android:icon="@drawable/icon" android:label="@string/app_name" android:screenOrientation="portrait" android:theme="@android:style/Theme.Holo.Light.DarkActionBar" android:windowSoftInputMode="stateUnspecified|adjustResize" android:name="flirtplanet.HelloFacebookSampleActivity" />
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="com.trulysocialapps.digitaldating.mono.MonoRuntimeProvider.__mono_init__" />
+    <receiver android:name="mono.android.Seppuku">
+      <intent-filter>
+        <action android:name="mono.android.intent.action.SEPPUKU" />
+        <category android:name="mono.android.intent.category.SEPPUKU.com.trulysocialapps.digitaldating" />
+      </intent-filter>
+    </receiver>
+  </application>
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="com.android.vending.BILLING" />
+  <permission android:name="com.trulysocialapps.digitaldating.permission.C2D_MESSAGE" android:protectionLevel="signature" />
+  <uses-permission android:name="com.trulysocialapps.digitaldating.permission.C2D_MESSAGE" />
+  <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+  <uses-permission android:name="android.permission.VIBRATE" />
+  <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <permission android:name="android.permission.INTERNET" />
+  <permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <permission android:name="com.trulysocialapps.digitaldating.permission.C2D_MESSAGE" />
+  <uses-permission android:name="com.trulysocialapps.digitaldating.permission.C2D_MESSAGE" />
+  <uses-permission android:name="android.permission.WAKE_LOCK" />
+</manifest>

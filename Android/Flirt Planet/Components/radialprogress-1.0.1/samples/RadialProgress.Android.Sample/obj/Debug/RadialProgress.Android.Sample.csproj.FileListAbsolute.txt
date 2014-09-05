@@ -1,0 +1,28 @@
+D:\Project\27-05\Components\radialprogress-1.0.1\samples\RadialProgress.Android.Sample\bin\Debug\RadialProgress.Android.Sample.dll
+D:\Project\27-05\Components\radialprogress-1.0.1\samples\RadialProgress.Android.Sample\bin\Debug\RadialProgress.Android.Sample.pdb
+D:\Project\27-05\Components\radialprogress-1.0.1\samples\RadialProgress.Android.Sample\bin\Debug\RadialProgress.Android.Sample.dll.mdb
+D:\Project\27-05\Components\radialprogress-1.0.1\samples\RadialProgress.Android.Sample\bin\Debug\RadialProgress.Android.Sample.apk
+D:\Project\27-05\Components\radialprogress-1.0.1\samples\RadialProgress.Android.Sample\bin\Debug\RadialProgress.Android.Sample-Signed.apk
+D:\Project\27-05\Components\radialprogress-1.0.1\samples\RadialProgress.Android.Sample\bin\Debug\RadialProgress.Android.dll
+D:\Project\27-05\Components\radialprogress-1.0.1\samples\RadialProgress.Android.Sample\obj\Debug\RadialProgress.Android.Sample.dll
+D:\Project\27-05\Components\radialprogress-1.0.1\samples\RadialProgress.Android.Sample\obj\Debug\RadialProgress.Android.Sample.pdb
+D:\Project\27-05\Components\radialprogress-1.0.1\samples\RadialProgress.Android.Sample\obj\Debug\android\bin\RadialProgress.Android.Sample.apk
+D:\Project\27-05\Components\radialprogress-1.0.1\samples\RadialProgress.Android.Sample\obj\Debug\res\layout\main.xml
+D:\Project\27-05\Components\radialprogress-1.0.1\samples\RadialProgress.Android.Sample\obj\Debug\res\values\strings.xml
+D:\Project\27-05\Components\radialprogress-1.0.1\samples\RadialProgress.Android.Sample\obj\Debug\res\drawable\icon.png
+D:\Project\27-05\Components\radialprogress-1.0.1\samples\RadialProgress.Android.Sample\obj\Debug\R.cs.flag
+D:\Project\27-05\Components\radialprogress-1.0.1\samples\RadialProgress.Android.Sample\obj\Debug\uploadflags.txt
+D:\Data\Flirt Planet\Components\radialprogress-1.0.1\samples\RadialProgress.Android.Sample\bin\Debug\RadialProgress.Android.Sample.dll
+D:\Data\Flirt Planet\Components\radialprogress-1.0.1\samples\RadialProgress.Android.Sample\bin\Debug\RadialProgress.Android.Sample.pdb
+D:\Data\Flirt Planet\Components\radialprogress-1.0.1\samples\RadialProgress.Android.Sample\bin\Debug\RadialProgress.Android.Sample.dll.mdb
+D:\Data\Flirt Planet\Components\radialprogress-1.0.1\samples\RadialProgress.Android.Sample\bin\Debug\RadialProgress.Android.Sample.apk
+D:\Data\Flirt Planet\Components\radialprogress-1.0.1\samples\RadialProgress.Android.Sample\bin\Debug\RadialProgress.Android.Sample-Signed.apk
+D:\Data\Flirt Planet\Components\radialprogress-1.0.1\samples\RadialProgress.Android.Sample\bin\Debug\RadialProgress.Android.dll
+D:\Data\Flirt Planet\Components\radialprogress-1.0.1\samples\RadialProgress.Android.Sample\obj\Debug\RadialProgress.Android.Sample.dll
+D:\Data\Flirt Planet\Components\radialprogress-1.0.1\samples\RadialProgress.Android.Sample\obj\Debug\RadialProgress.Android.Sample.pdb
+D:\Data\Flirt Planet\Components\radialprogress-1.0.1\samples\RadialProgress.Android.Sample\obj\Debug\android\bin\RadialProgress.Android.Sample.apk
+D:\Data\Flirt Planet\Components\radialprogress-1.0.1\samples\RadialProgress.Android.Sample\obj\Debug\res\layout\main.xml
+D:\Data\Flirt Planet\Components\radialprogress-1.0.1\samples\RadialProgress.Android.Sample\obj\Debug\res\values\strings.xml
+D:\Data\Flirt Planet\Components\radialprogress-1.0.1\samples\RadialProgress.Android.Sample\obj\Debug\res\drawable\icon.png
+D:\Data\Flirt Planet\Components\radialprogress-1.0.1\samples\RadialProgress.Android.Sample\obj\Debug\R.cs.flag
+D:\Data\Flirt Planet\Components\radialprogress-1.0.1\samples\RadialProgress.Android.Sample\obj\Debug\uploadflags.txt

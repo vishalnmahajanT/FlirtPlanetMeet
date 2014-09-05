@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:layout_width="match_parent"
+    p1:layout_height="match_parent"
+    p1:id="@+id/scrollView1">
+    <LinearLayout
+        p1:orientation="vertical"
+        p1:layout_width="match_parent"
+        p1:layout_height="match_parent"
+        p1:background="@color/background_color">
+        <FrameLayout
+            p1:layout_width="match_parent"
+            p1:layout_height="140dp"
+            p1:id="@+id/frameLayout1">
+            <ImageView
+                p1:layout_width="fill_parent"
+                p1:layout_height="120dp"
+                p1:id="@+id/iv_coverPhoto"
+                p1:scaleType="fitXY" />
+            <ImageView
+                p1:layout_width="80dp"
+                p1:layout_height="80dp"
+                p1:id="@+id/iv_profilePic"
+                p1:layout_gravity="center"
+                p1:layout_marginTop="30dp" />
+        </FrameLayout>
+        <LinearLayout
+            p1:orientation="vertical"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/linearLayout2">
+            <TextView
+                p1:text="Name"
+                p1:textAppearance="?android:attr/textAppearanceMedium"
+                p1:layout_width="wrap_content"
+                p1:layout_height="wrap_content"
+                p1:id="@+id/tv_name"
+                p1:layout_gravity="center"
+                p1:gravity="center"
+                p1:textColor="@color/black"
+                p1:layout_marginBottom="10dp" />
+            <LinearLayout
+                p1:orientation="horizontal"
+                p1:layout_width="match_parent"
+                p1:layout_height="wrap_content"
+                p1:id="@+id/relativeLayout3"
+                p1:minWidth="25px"
+                p1:minHeight="25px"
+                p1:layout_gravity="center">
+                <LinearLayout
+                    p1:orientation="vertical"
+                    p1:layout_width="0dp"
+                    p1:layout_height="match_parent"
+                    p1:id="@+id/ll_watch"
+                    p1:gravity="center"
+                    p1:layout_gravity="center"
+                    p1:layout_weight="1">
+                    <ImageView
+                        p1:src="@drawable/DD_Con_icn_add_to_watchlist"
+                        p1:layout_width="30dp"
+                        p1:layout_height="30dp"
+                        p1:id="@+id/im_watch"
+                        p1:layout_gravity="center" />
+                    <TextView
+                        p1:text="99%"
+                        p1:textAppearance="?android:attr/textAppearanceSmall"
+                        p1:layout_width="wrap_content"
+                        p1:layout_height="wrap_content"
+                        p1:id="@+id/tv_matchingPercent"
+                        p1:layout_gravity="center"
+                        p1:gravity="center"
+                        p1:textColor="@color/aqua_blue"
+                        p1:maxHeight="15dp"
+                        p1:visibility="invisible"
+                        p1:textSize="12dp" />
+                </LinearLayout>
+                <LinearLayout
+                    p1:orientation="vertical"
+                    p1:layout_width="0dp"
+                    p1:layout_height="wrap_content"
+                    p1:id="@+id/ll_connect"
+                    p1:layout_weight="1"
+                    p1:gravity="center">
+                    <ImageView
+                        p1:layout_width="30dp"
+                        p1:layout_height="30dp"
+                        p1:src="@drawable/DD_icn_connect"
+                        p1:id="@+id/im_connect"
+                        p1:layout_gravity="center" />
+                    <LinearLayout
+                        p1:orientation="horizontal"
+                        p1:layout_width="wrap_content"
+                        p1:layout_height="wrap_content"
+                        p1:id="@+id/ll_h_connect"
+                        p1:layout_gravity="center">
+                        <ImageView
+                            p1:layout_width="10dp"
+                            p1:layout_height="10dp"
+                            p1:src="@drawable/DD_icn_drop"
+                            p1:id="@+id/im_icnDrop" />
+                        <TextView
+                            p1:text="99"
+                            p1:textAppearance="?android:attr/textAppearanceSmall"
+                            p1:layout_width="wrap_content"
+                            p1:layout_height="wrap_content"
+                            p1:id="@+id/tv_connectionCost"
+                            p1:layout_gravity="center"
+                            p1:gravity="center"
+                            p1:textColor="@color/aqua_blue"
+                            p1:maxHeight="15dp"
+                            p1:textSize="12dp" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    p1:orientation="vertical"
+                    p1:layout_width="0dp"
+                    p1:layout_height="wrap_content"
+                    p1:id="@+id/ll_reviews"
+                    p1:layout_gravity="center"
+                    p1:layout_weight="1">
+                    <ImageView
+                        p1:src="@drawable/DD_profile_icn_reviews_mobile"
+                        p1:layout_width="30dp"
+                        p1:layout_height="30dp"
+                        p1:id="@+id/im_review"
+                        p1:layout_weight="1"
+                        p1:layout_gravity="center" />
+                    <TextView
+                        p1:text="100%"
+                        p1:textAppearance="?android:attr/textAppearanceSmall"
+                        p1:layout_width="wrap_content"
+                        p1:layout_height="wrap_content"
+                        p1:id="@+id/tv_positivePercent"
+                        p1:layout_gravity="center"
+                        p1:gravity="center"
+                        p1:textColor="@color/aqua_blue"
+                        p1:maxHeight="15dp"
+                        p1:textSize="12dp"
+                        p1:visibility="visible" />
+                </LinearLayout>
+                <LinearLayout
+                    p1:orientation="vertical"
+                    p1:layout_width="0dp"
+                    p1:layout_height="wrap_content"
+                    p1:id="@+id/ll_reviews"
+                    p1:layout_gravity="center"
+                    p1:layout_weight="1">
+                    <ImageView
+                        p1:src="@drawable/DD_profile_icn_connections_mobile"
+                        p1:layout_height="30dp"
+                        p1:id="@+id/iv_connections"
+                        p1:layout_width="30dp"
+                        p1:layout_gravity="center" />
+                    <TextView
+                        p1:text="99"
+                        p1:textAppearance="?android:attr/textAppearanceSmall"
+                        p1:layout_width="wrap_content"
+                        p1:layout_height="wrap_content"
+                        p1:id="@+id/tv_connectionCount"
+                        p1:layout_gravity="center"
+                        p1:gravity="center"
+                        p1:textColor="@color/aqua_blue"
+                        p1:maxHeight="15dp"
+                        p1:textSize="12dp"
+                        p1:visibility="visible" />
+                </LinearLayout>
+                <ImageView
+                    p1:src="@drawable/DD_profile_flag_unconnect"
+                    p1:layout_height="30dp"
+                    p1:id="@+id/iv_flagUser"
+                    p1:layout_weight="1"
+                    p1:layout_width="0dp" />
+            </LinearLayout>
+            <RatingBar
+                p1:id="@+id/rb_rating"
+                p1:layout_width="wrap_content"
+                p1:layout_height="wrap_content"
+                style="?android:attr/ratingBarStyleSmall"
+                p1:numStars="5"
+                p1:stepSize="1"
+                p1:isIndicator="false"
+                p1:clickable="true"
+                p1:layout_gravity="center"
+                p1:layout_marginTop="10dp" />
+            <TextView
+                p1:text="@string/asl"
+                p1:textAppearance="?android:attr/textAppearanceSmall"
+                p1:layout_width="wrap_content"
+                p1:layout_height="wrap_content"
+                p1:id="@+id/tv_asl"
+                p1:layout_gravity="center"
+                p1:textColor="@color/black"
+                p1:padding="10dp" />
+            <View
+                p1:layout_width="fill_parent"
+                p1:layout_height="1dp"
+                p1:id="@+id/view1"
+                p1:background="@color/solid_white"
+                p1:layout_below="@id/TextView02"
+                p1:layout_marginBottom="8dp" />
+            <TextView
+                p1:text="Photos"
+                p1:textAppearance="?android:attr/textAppearanceSmall"
+                p1:layout_width="wrap_content"
+                p1:layout_height="wrap_content"
+                p1:id="@+id/asl_text"
+                p1:layout_gravity="center"
+                p1:textColor="@color/black" />
+            <LinearLayout
+                p1:orientation="horizontal"
+                p1:layout_width="fill_parent"
+                p1:layout_height="wrap_content"
+                p1:layout_gravity="center">
+                <include
+                    layout="@layout/galleryRelative" />
+            <!-- <flirtplanet.GridViewNoScroll
+                    p1:id="@+id/gv_galleryImage"
+                    p1:layout_width="fill_parent"
+                    p1:layout_height="fill_parent"
+                    p1:columnWidth="90dp"
+                    p1:numColumns="auto_fit"
+                    p1:verticalSpacing="10dp"
+                    p1:horizontalSpacing="10dp"
+                    p1:stretchMode="columnWidth"
+                    p1:gravity="center" /> -->
+            </LinearLayout>
+            <View
+                p1:layout_width="fill_parent"
+                p1:layout_height="1dp"
+                p1:id="@+id/view1"
+                p1:background="@color/solid_white"
+                p1:layout_marginTop="10dp"
+                p1:layout_marginBottom="8dp" />
+            <TextView
+                p1:text="Details"
+                p1:textAppearance="?android:attr/textAppearanceSmall"
+                p1:layout_width="match_parent"
+                p1:layout_height="wrap_content"
+                p1:gravity="center"
+                p1:textColor="@color/black" />
+        </LinearLayout>
+        <LinearLayout
+            p1:orientation="horizontal"
+            p1:layout_width="wrap_content"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/relativeLayout3"
+            p1:minWidth="25px"
+            p1:minHeight="25px"
+            p1:layout_gravity="center">
+            <flirtplanet.DetailsGridNoScroll
+                p1:id="@+id/gv_details"
+                p1:layout_width="wrap_content"
+                p1:layout_height="wrap_content"
+                p1:columnWidth="90dp"
+                p1:numColumns="auto_fit"
+                p1:verticalSpacing="10dp"
+                p1:horizontalSpacing="10dp"
+                p1:stretchMode="columnWidth"
+                p1:gravity="center" />
+        </LinearLayout>
+        <View
+            p1:layout_width="fill_parent"
+            p1:layout_height="1dp"
+            p1:id="@+id/view1"
+            p1:background="@color/solid_white"
+            p1:layout_marginTop="10dp"
+            p1:layout_marginBottom="8dp" />
+        <TextView
+            p1:text="Info"
+            p1:textAppearance="?android:attr/textAppearanceMedium"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:gravity="center"
+            p1:textColor="@color/black" />
+        <LinearLayout
+            p1:minWidth="25px"
+            p1:minHeight="25px"
+            p1:orientation="vertical"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:layout_marginLeft="10dp"
+            p1:id="@+id/relativeLayout4">
+            <TextView
+                p1:text="About Me"
+                p1:textAppearance="?android:attr/textAppearanceMedium"
+                p1:layout_width="wrap_content"
+                p1:layout_height="wrap_content"
+                p1:textColor="@color/black" />
+            <TextView
+                p1:inputType="textMultiLine|textNoSuggestions"
+                p1:layout_width="match_parent"
+                p1:layout_height="wrap_content"
+                p1:id="@+id/tv_aboutme"
+                p1:padding="10dp"
+                p1:textColor="@color/black" />
+        <!-- talent -->
+            <TextView
+                p1:text="Talents"
+                p1:textAppearance="?android:attr/textAppearanceMedium"
+                p1:layout_width="wrap_content"
+                p1:layout_height="wrap_content"
+                p1:id="@+id/tv_aboutme"
+                p1:textColor="@color/black" />
+            <TextView
+                p1:inputType="textMultiLine|textNoSuggestions"
+                p1:layout_width="match_parent"
+                p1:layout_height="wrap_content"
+                p1:id="@+id/tv_talent"
+                p1:padding="10dp"
+                p1:textColor="@color/black" />
+        <!-- looking for -->
+            <TextView
+                p1:text="Looking For"
+                p1:textAppearance="?android:attr/textAppearanceMedium"
+                p1:layout_width="wrap_content"
+                p1:layout_height="wrap_content"
+                p1:textColor="@color/black" />
+            <TextView
+                p1:inputType="textMultiLine|textNoSuggestions"
+                p1:layout_width="match_parent"
+                p1:layout_height="wrap_content"
+                p1:id="@+id/tv_lookingfor"
+                p1:padding="10dp"
+                p1:textColor="@color/black" />
+        <!-- connect -->
+            <TextView
+                p1:text="Connect to me"
+                p1:textAppearance="?android:attr/textAppearanceMedium"
+                p1:layout_width="wrap_content"
+                p1:layout_height="wrap_content"
+                p1:textColor="@color/black" />
+            <TextView
+                p1:inputType="textMultiLine|textNoSuggestions"
+                p1:layout_width="match_parent"
+                p1:layout_height="wrap_content"
+                p1:id="@+id/tv_connectme"
+                p1:padding="10dp"
+                p1:textColor="@color/black" />
+        <!-- goals -->
+            <TextView
+                p1:text="Goals"
+                p1:textAppearance="?android:attr/textAppearanceMedium"
+                p1:layout_width="wrap_content"
+                p1:layout_height="wrap_content"
+                p1:textColor="@color/black" />
+            <TextView
+                p1:inputType="textMultiLine|textNoSuggestions"
+                p1:layout_width="match_parent"
+                p1:layout_height="wrap_content"
+                p1:id="@+id/tv_goals"
+                p1:padding="10dp"
+                p1:textColor="@color/black" />
+        <!-- matters -->
+            <TextView
+                p1:text="Matters to me"
+                p1:textAppearance="?android:attr/textAppearanceMedium"
+                p1:layout_width="wrap_content"
+                p1:layout_height="wrap_content"
+                p1:textColor="@color/black" />
+            <TextView
+                p1:inputType="textMultiLine|textNoSuggestions"
+                p1:layout_width="match_parent"
+                p1:layout_height="wrap_content"
+                p1:id="@+id/tv_mattersme"
+                p1:padding="10dp"
+                p1:textColor="@color/black" />
+        <!-- interest -->
+            <TextView
+                p1:text="Interests"
+                p1:textAppearance="?android:attr/textAppearanceMedium"
+                p1:layout_width="wrap_content"
+                p1:layout_height="wrap_content"
+                p1:textColor="@color/black" />
+            <TextView
+                p1:inputType="textMultiLine|textNoSuggestions"
+                p1:layout_width="match_parent"
+                p1:layout_height="wrap_content"
+                p1:id="@+id/tv_interests"
+                p1:padding="10dp"
+                p1:textColor="@color/black" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black">
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:id="@+id/ll_discount">
+        <ImageView
+            android:src="@drawable/DD_FJ_icn_flirt_juice_5packs"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:id="@+id/iv_bottle"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="5dp" />
+        <ImageView
+            android:src="@drawable/DD_FJ_icn_25_discount"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/iv_discount"
+            android:visibility="visible" />
+    </FrameLayout>
+    <TextView
+        android:text="10 PACKs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_juiceAmount"
+        android:layout_toRightOf="@id/ll_discount"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="60dp"
+        android:layout_centerInParent="true" />
+    <Button
+        android:text="$0.00"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:id="@+id/btn_price"
+        android:background="@color/aqua_blue"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:textSize="12dp"
+        android:textColor="@color/solid_white"
+        android:layout_centerVertical="true" />
+</RelativeLayout>

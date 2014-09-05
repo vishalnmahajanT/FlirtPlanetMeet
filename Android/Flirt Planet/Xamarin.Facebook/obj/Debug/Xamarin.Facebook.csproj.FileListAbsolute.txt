@@ -1,0 +1,72 @@
+D:\Project\Facebook\Xamarin.Facebook\bin\Debug\Xamarin.Facebook.dll
+D:\Project\Facebook\Xamarin.Facebook\bin\Debug\Xamarin.Facebook.pdb
+D:\Project\Facebook\Xamarin.Facebook\obj\Debug\Xamarin.Facebook.dll
+D:\Project\Facebook\Xamarin.Facebook\obj\Debug\Xamarin.Facebook.pdb
+D:\Project\3-6VishalFB\Xamarin.Facebook\bin\Debug\Xamarin.Facebook.dll
+D:\Project\3-6VishalFB\Xamarin.Facebook\bin\Debug\Xamarin.Facebook.pdb
+D:\Project\3-6VishalFB\Xamarin.Facebook\obj\Debug\Xamarin.Facebook.dll
+D:\Project\3-6VishalFB\Xamarin.Facebook\obj\Debug\Xamarin.Facebook.pdb
+D:\Data\Flirt Planet___\Xamarin.Facebook\bin\Debug\Xamarin.Facebook.dll
+D:\Data\Flirt Planet___\Xamarin.Facebook\bin\Debug\Xamarin.Facebook.pdb
+D:\Data\Flirt Planet___\Xamarin.Facebook\obj\Debug\Xamarin.Facebook.dll
+D:\Data\Flirt Planet___\Xamarin.Facebook\obj\Debug\Xamarin.Facebook.pdb
+D:\Project\VIshal\17-06 - mergedall\Flirt Planet vi me - Copy\Flirt Planet\Xamarin.Facebook\bin\Debug\Xamarin.Facebook.dll
+D:\Project\VIshal\17-06 - mergedall\Flirt Planet vi me - Copy\Flirt Planet\Xamarin.Facebook\bin\Debug\Xamarin.Facebook.pdb
+D:\Project\VIshal\17-06 - mergedall\Flirt Planet vi me - Copy\Flirt Planet\Xamarin.Facebook\obj\Debug\Xamarin.Facebook.dll
+D:\Project\VIshal\17-06 - mergedall\Flirt Planet vi me - Copy\Flirt Planet\Xamarin.Facebook\obj\Debug\Xamarin.Facebook.pdb
+D:\Project\All\17-6 vi\Flirt Planet\Xamarin.Facebook\bin\Debug\Xamarin.Facebook.dll
+D:\Project\All\17-6 vi\Flirt Planet\Xamarin.Facebook\bin\Debug\Xamarin.Facebook.pdb
+D:\Project\All\17-6 vi\Flirt Planet\Xamarin.Facebook\obj\Debug\Xamarin.Facebook.dll
+D:\Project\All\17-6 vi\Flirt Planet\Xamarin.Facebook\obj\Debug\Xamarin.Facebook.pdb
+D:\Project\All\5-7\4-7 vi\Flirt Planet\Xamarin.Facebook\bin\Debug\Xamarin.Facebook.dll
+D:\Project\All\5-7\4-7 vi\Flirt Planet\Xamarin.Facebook\bin\Debug\Xamarin.Facebook.pdb
+D:\Project\All\5-7\4-7 vi\Flirt Planet\Xamarin.Facebook\obj\Debug\Xamarin.Facebook.dll
+D:\Project\All\5-7\4-7 vi\Flirt Planet\Xamarin.Facebook\obj\Debug\Xamarin.Facebook.pdb
+D:\Project\All\5-7\4-7 vime\Flirt Planet\Xamarin.Facebook\bin\Debug\Xamarin.Facebook.dll
+D:\Project\All\5-7\4-7 vime\Flirt Planet\Xamarin.Facebook\bin\Debug\Xamarin.Facebook.pdb
+D:\Project\All\5-7\4-7 vime\Flirt Planet\Xamarin.Facebook\obj\Debug\Xamarin.Facebook.dll
+D:\Project\All\5-7\4-7 vime\Flirt Planet\Xamarin.Facebook\obj\Debug\Xamarin.Facebook.pdb
+D:\Project\All\5-7-eodvi\Flirt Planet\Xamarin.Facebook\bin\Debug\Xamarin.Facebook.dll
+D:\Project\All\5-7-eodvi\Flirt Planet\Xamarin.Facebook\bin\Debug\Xamarin.Facebook.pdb
+D:\Project\All\5-7-eodvi\Flirt Planet\Xamarin.Facebook\obj\Debug\Xamarin.Facebook.dll
+D:\Project\All\5-7-eodvi\Flirt Planet\Xamarin.Facebook\obj\Debug\Xamarin.Facebook.pdb
+D:\Project\VIshal\11-07\Flirt Planet\Xamarin.Facebook\bin\Debug\Xamarin.Facebook.dll
+D:\Project\VIshal\11-07\Flirt Planet\Xamarin.Facebook\bin\Debug\Xamarin.Facebook.pdb
+D:\Project\VIshal\11-07\Flirt Planet\Xamarin.Facebook\obj\Debug\Xamarin.Facebook.dll
+D:\Project\VIshal\11-07\Flirt Planet\Xamarin.Facebook\obj\Debug\Xamarin.Facebook.pdb
+D:\Project\All\17-7\Flirt Planet\Xamarin.Facebook\bin\Debug\Xamarin.Facebook.dll
+D:\Project\All\17-7\Flirt Planet\Xamarin.Facebook\bin\Debug\Xamarin.Facebook.pdb
+D:\Project\All\17-7\Flirt Planet\Xamarin.Facebook\obj\Debug\Xamarin.Facebook.dll
+D:\Project\All\17-7\Flirt Planet\Xamarin.Facebook\obj\Debug\Xamarin.Facebook.pdb
+D:\Project\VIshal\18-07eod\Flirt Planet\Xamarin.Facebook\bin\Debug\Xamarin.Facebook.dll
+D:\Project\VIshal\18-07eod\Flirt Planet\Xamarin.Facebook\bin\Debug\Xamarin.Facebook.pdb
+D:\Project\VIshal\18-07eod\Flirt Planet\Xamarin.Facebook\obj\Debug\Xamarin.Facebook.dll
+D:\Project\VIshal\18-07eod\Flirt Planet\Xamarin.Facebook\obj\Debug\Xamarin.Facebook.pdb
+D:\Project\VIshal\22-7eod\Flirt Planet\Xamarin.Facebook\bin\Debug\Xamarin.Facebook.dll
+D:\Project\VIshal\22-7eod\Flirt Planet\Xamarin.Facebook\bin\Debug\Xamarin.Facebook.pdb
+D:\Project\VIshal\22-7eod\Flirt Planet\Xamarin.Facebook\obj\Debug\Xamarin.Facebook.dll
+D:\Project\VIshal\22-7eod\Flirt Planet\Xamarin.Facebook\obj\Debug\Xamarin.Facebook.pdb
+D:\Project\VIshal\24-7eod\Flirt Planet\Xamarin.Facebook\bin\Debug\Xamarin.Facebook.dll
+D:\Project\VIshal\24-7eod\Flirt Planet\Xamarin.Facebook\bin\Debug\Xamarin.Facebook.pdb
+D:\Project\VIshal\24-7eod\Flirt Planet\Xamarin.Facebook\obj\Debug\Xamarin.Facebook.dll
+D:\Project\VIshal\24-7eod\Flirt Planet\Xamarin.Facebook\obj\Debug\Xamarin.Facebook.pdb
+D:\Project\VIshal\25-07\Flirt Planet\Xamarin.Facebook\bin\Debug\Xamarin.Facebook.dll
+D:\Project\VIshal\25-07\Flirt Planet\Xamarin.Facebook\bin\Debug\Xamarin.Facebook.pdb
+D:\Project\VIshal\25-07\Flirt Planet\Xamarin.Facebook\obj\Debug\Xamarin.Facebook.dll
+D:\Project\VIshal\25-07\Flirt Planet\Xamarin.Facebook\obj\Debug\Xamarin.Facebook.pdb
+D:\Project\VIshal\28-7\Flirt Planet\Xamarin.Facebook\bin\Debug\Xamarin.Facebook.dll
+D:\Project\VIshal\28-7\Flirt Planet\Xamarin.Facebook\bin\Debug\Xamarin.Facebook.pdb
+D:\Project\VIshal\28-7\Flirt Planet\Xamarin.Facebook\obj\Debug\Xamarin.Facebook.dll
+D:\Project\VIshal\28-7\Flirt Planet\Xamarin.Facebook\obj\Debug\Xamarin.Facebook.pdb
+D:\Project\VIshal\6-8\Flirt Planet\Xamarin.Facebook\bin\Debug\Xamarin.Facebook.dll
+D:\Project\VIshal\6-8\Flirt Planet\Xamarin.Facebook\bin\Debug\Xamarin.Facebook.pdb
+D:\Project\VIshal\6-8\Flirt Planet\Xamarin.Facebook\obj\Debug\Xamarin.Facebook.dll
+D:\Project\VIshal\6-8\Flirt Planet\Xamarin.Facebook\obj\Debug\Xamarin.Facebook.pdb
+D:\Data\Flirt Planet\Xamarin.Facebook\bin\Debug\Xamarin.Facebook.dll
+D:\Data\Flirt Planet\Xamarin.Facebook\bin\Debug\Xamarin.Facebook.pdb
+D:\Data\Flirt Planet\Xamarin.Facebook\obj\Debug\Xamarin.Facebook.dll
+D:\Data\Flirt Planet\Xamarin.Facebook\obj\Debug\Xamarin.Facebook.pdb
+D:\Project\VIshal\8-8\Flirt Planet\Xamarin.Facebook\bin\Debug\Xamarin.Facebook.dll
+D:\Project\VIshal\8-8\Flirt Planet\Xamarin.Facebook\bin\Debug\Xamarin.Facebook.pdb
+D:\Project\VIshal\8-8\Flirt Planet\Xamarin.Facebook\obj\Debug\Xamarin.Facebook.dll
+D:\Project\VIshal\8-8\Flirt Planet\Xamarin.Facebook\obj\Debug\Xamarin.Facebook.pdb

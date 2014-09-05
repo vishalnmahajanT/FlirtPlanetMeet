@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:minWidth="25px"
+    p1:minHeight="25px"
+    p1:layout_width="match_parent"
+    p1:layout_height="match_parent"
+    p1:id="@+id/scrollView1">
+    <LinearLayout
+        p1:orientation="vertical"
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="match_parent"
+        p1:layout_height="match_parent"
+        p1:background="@color/background_color">
+        <FrameLayout
+            p1:minWidth="25px"
+            p1:minHeight="25px"
+            p1:layout_width="match_parent"
+            p1:layout_height="140dp"
+            p1:id="@+id/frameLayout1">
+            <ImageView
+                p1:layout_width="fill_parent"
+                p1:layout_height="120dp"
+                p1:id="@+id/iv_coverPhoto"
+                p1:scaleType="fitXY" />
+        <!-- <ImageView
+                p1:src="@android:drawable/ic_menu_gallery"
+                p1:layout_width="match_parent"
+                p1:layout_height="match_parent"
+                p1:id="@+id/imageView1" />
+            
+            <ImageView
+	            p1:src="@android:drawable/ic_menu_gallery"
+	            p1:layout_width="match_parent"
+	            p1:layout_height="match_parent"
+	            p1:id="@+id/imageView1" /> -->
+            <ImageView
+                p1:layout_width="80dp"
+                p1:layout_height="80dp"
+                p1:id="@+id/iv_profilePic"
+                p1:layout_gravity="center"
+                p1:layout_marginTop="30dp" />
+            <TextView
+                p1:text="Change"
+                p1:textAppearance="?android:attr/textAppearanceSmall"
+                p1:layout_width="wrap_content"
+                p1:layout_height="wrap_content"
+                p1:id="@+id/tv_changeCover"
+                p1:layout_gravity="right"
+                p1:padding="10dp"
+                p1:textColor="@color/aqua_blue" />
+        </FrameLayout>
+        <LinearLayout
+            p1:orientation="vertical"
+            p1:minWidth="25px"
+            p1:minHeight="25px"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/linearLayout2">
+            <TextView
+                p1:text="Name"
+                p1:textAppearance="?android:attr/textAppearanceMedium"
+                p1:layout_width="wrap_content"
+                p1:layout_height="wrap_content"
+                p1:id="@+id/tv_name"
+                p1:layout_gravity="center"
+                p1:gravity="center"
+                p1:textColor="@color/black"
+                p1:paddingBottom="10dp" />
+            <LinearLayout
+                p1:orientation="horizontal"
+                p1:layout_width="match_parent"
+                p1:layout_height="wrap_content"
+                p1:id="@+id/relativeLayout3"
+                p1:minHeight="25px"
+                p1:layout_gravity="center"
+                p1:gravity="center_horizontal"
+                p1:paddingLeft="70dp">
+                <ImageView
+                    p1:src="@drawable/DD_profile_icn_matching_sauce_mobile"
+                    p1:layout_width="30dp"
+                    p1:layout_height="30dp"
+                    p1:id="@+id/im_matchingSause"
+                    p1:layout_weight="1" />
+                <LinearLayout
+                    p1:orientation="vertical"
+                    p1:layout_width="wrap_content"
+                    p1:layout_height="wrap_content"
+                    p1:id="@+id/ll_reviews"
+                    p1:layout_weight="1">
+                    <ImageView
+                        p1:src="@drawable/DD_profile_icn_reviews_mobile"
+                        p1:layout_width="30dp"
+                        p1:layout_height="30dp"
+                        p1:id="@+id/im_review"
+                        p1:layout_gravity="center" />
+                    <TextView
+                        p1:text="100%"
+                        p1:textAppearance="?android:attr/textAppearanceSmall"
+                        p1:layout_width="wrap_content"
+                        p1:layout_height="wrap_content"
+                        p1:id="@+id/tv_reviewPercent"
+                        p1:textColor="@color/aqua_blue"
+                        p1:maxHeight="20dp"
+                        p1:textSize="10dp"
+                        p1:layout_gravity="center" />
+                </LinearLayout>
+                <LinearLayout
+                    p1:orientation="vertical"
+                    p1:layout_width="wrap_content"
+                    p1:layout_height="wrap_content"
+                    p1:id="@+id/ll_connections"
+                    p1:layout_weight="1">
+                    <ImageView
+                        p1:src="@drawable/DD_profile_icn_connections_mobile"
+                        p1:layout_width="30dp"
+                        p1:layout_height="30dp"
+                        p1:id="@+id/im_connection"
+                        p1:layout_gravity="center" />
+                    <TextView
+                        p1:text="999"
+                        p1:textAppearance="?android:attr/textAppearanceSmall"
+                        p1:layout_width="wrap_content"
+                        p1:layout_height="wrap_content"
+                        p1:id="@+id/tv_numberOfConnections"
+                        p1:textColor="@color/aqua_blue"
+                        p1:maxHeight="20dp"
+                        p1:textSize="10dp"
+                        p1:layout_gravity="center" />
+                </LinearLayout>
+                <LinearLayout
+                    p1:orientation="horizontal"
+                    p1:layout_width="wrap_content"
+                    p1:layout_height="wrap_content"
+                    p1:id="@+id/ll_privacy"
+                    p1:layout_weight="1">
+                    <ImageView
+                        p1:src="@drawable/DD_Header_icn_tickbox"
+                        p1:layout_width="10dp"
+                        p1:layout_height="10dp"
+                        p1:id="@+id/im_privacy"
+                        p1:layout_weight="1"
+                        p1:layout_gravity="center" />
+                    <TextView
+                        p1:text="Public"
+                        p1:textAppearance="?android:attr/textAppearanceSmall"
+                        p1:layout_width="wrap_content"
+                        p1:layout_height="wrap_content"
+                        p1:id="@+id/textView1"
+                        p1:textColor="@color/aqua_blue"
+                        p1:layout_weight="1" />
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout
+                p1:layout_width="fill_parent"
+                p1:layout_height="wrap_content"
+                p1:minWidth="25px"
+                p1:minHeight="25px"
+                p1:layout_marginBottom="5dp">
+                <TextView
+                    p1:text="@string/asl"
+                    p1:textAppearance="?android:attr/textAppearanceSmall"
+                    p1:layout_width="wrap_content"
+                    p1:layout_height="wrap_content"
+                    p1:id="@+id/tv_asl"
+                    p1:layout_gravity="center_vertical"
+                    p1:layout_centerHorizontal="true"
+                    p1:layout_centerVertical="true"
+                    p1:textColor="@color/black" />
+                <ImageButton
+                    p1:layout_width="20dp"
+                    p1:layout_height="20dp"
+                    p1:id="@+id/im_editAsl"
+                    p1:src="@drawable/DD_icn_edit"
+                    p1:focusable="true"
+                    p1:scaleType="centerInside"
+                    p1:background="@color/transparent"
+                    p1:layout_gravity="right"
+                    p1:layout_alignParentRight="true"
+                    p1:layout_marginRight="10dp" />
+            </RelativeLayout>
+            <View
+                p1:layout_width="fill_parent"
+                p1:layout_height="1dp"
+                p1:id="@+id/view1"
+                p1:background="@color/solid_white"
+                p1:layout_below="@id/TextView02"
+                p1:layout_marginBottom="8dp" />
+            <RelativeLayout
+                p1:layout_width="fill_parent"
+                p1:layout_height="wrap_content"
+                p1:layout_gravity="center">
+                <TextView
+                    p1:text="Photos"
+                    p1:textAppearance="?android:attr/textAppearanceSmall"
+                    p1:layout_width="wrap_content"
+                    p1:layout_height="wrap_content"
+                    p1:id="@+id/asl_text"
+                    p1:layout_gravity="center"
+                    p1:layout_centerInParent="true"
+                    p1:textColor="@color/black" />
+                <ImageView
+                    p1:src="@drawable/DD_FlirtMail_icn_new_message"
+                    p1:layout_width="20dp"
+                    p1:layout_height="20dp"
+                    p1:id="@+id/im_addPhotos"
+                    p1:layout_alignParentRight="true"
+                    p1:layout_marginRight="10dp" />
+            </RelativeLayout>
+            <TextView
+                p1:text="No photos"
+                p1:textAppearance="?android:attr/textAppearanceSmall"
+                p1:layout_width="match_parent"
+                p1:layout_height="wrap_content"
+                p1:id="@+id/tv_noOwnPhotos"
+                p1:textColor="@color/black"
+                p1:visibility="visible"
+                p1:gravity="center"
+                p1:layout_gravity="center"
+                p1:padding="10dp"
+                p1:layout_marginTop="10dp" />
+        <!--<GridViewNoScroll
+                p1:id="@+id/gv_galleryImage"
+                p1:layout_width="fill_parent"
+                p1:layout_height="fill_parent"
+                p1:columnWidth="90dp"
+                p1:numColumns="auto_fit"
+                p1:verticalSpacing="10dp"
+                p1:horizontalSpacing="10dp"
+                p1:stretchMode="columnWidth"
+                p1:gravity="center" /> -->
+            <include
+                layout="@layout/galleryRelative" />
+            <View
+                p1:layout_width="fill_parent"
+                p1:layout_height="1dp"
+                p1:id="@+id/view1"
+                p1:background="@color/solid_white"
+                p1:layout_marginTop="10dp"
+                p1:layout_marginBottom="8dp" />
+            <TextView
+                p1:text="Details"
+                p1:textAppearance="?android:attr/textAppearanceSmall"
+                p1:layout_width="match_parent"
+                p1:layout_height="wrap_content"
+                p1:gravity="center"
+                p1:textColor="@color/black" />
+        </LinearLayout>
+        <LinearLayout
+            p1:orientation="horizontal"
+            p1:layout_width="wrap_content"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/relativeLayout3"
+            p1:minWidth="25px"
+            p1:minHeight="25px"
+            p1:layout_gravity="center">
+            <flirtplanet.DetailsGridNoScroll
+                p1:id="@+id/gv_details"
+                p1:layout_width="wrap_content"
+                p1:layout_height="wrap_content"
+                p1:columnWidth="90dp"
+                p1:numColumns="auto_fit"
+                p1:verticalSpacing="10dp"
+                p1:horizontalSpacing="10dp"
+                p1:stretchMode="columnWidth"
+                p1:gravity="center" />
+        </LinearLayout>
+        <View
+            p1:layout_width="fill_parent"
+            p1:layout_height="1dp"
+            p1:id="@+id/view1"
+            p1:background="@color/solid_white"
+            p1:layout_marginTop="10dp"
+            p1:layout_marginBottom="8dp" />
+        <TextView
+            p1:text="Info"
+            p1:textAppearance="?android:attr/textAppearanceMedium"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:gravity="center"
+            p1:textColor="@color/black_grey" />
+        <LinearLayout
+            p1:minWidth="25px"
+            p1:minHeight="25px"
+            p1:orientation="vertical"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:layout_marginLeft="10dp"
+            p1:id="@+id/relativeLayout4">
+            <RelativeLayout
+                p1:layout_width="fill_parent"
+                p1:layout_height="wrap_content">
+                <TextView
+                    p1:text="About Me"
+                    p1:textAppearance="?android:attr/textAppearanceMedium"
+                    p1:layout_width="wrap_content"
+                    p1:layout_height="wrap_content"
+                    p1:id="@+id/tv"
+                    p1:textColor="@color/black_grey" />
+                <ImageButton
+                    p1:layout_width="20dp"
+                    p1:layout_height="20dp"
+                    p1:id="@+id/im_aboutme"
+                    p1:src="@drawable/DD_icn_edit"
+                    p1:layout_margin="5dp"
+                    p1:layout_weight="1"
+                    p1:focusable="true"
+                    p1:scaleType="centerInside"
+                    p1:background="@color/transparent"
+                    p1:layout_gravity="right"
+                    p1:layout_alignParentRight="true"
+                    p1:layout_marginRight="10dp" />
+                <EditText
+                    p1:inputType="textMultiLine|textNoSuggestions"
+                    p1:layout_width="match_parent"
+                    p1:layout_height="wrap_content"
+                    p1:textAppearance="?android:attr/textAppearanceSmall"
+                    p1:id="@+id/tv_aboutme"
+                    p1:layout_below="@id/tv"
+                    p1:padding="10dp"
+                    p1:hint="Tell us about you." />
+            </RelativeLayout>
+        <!-- talent -->
+            <RelativeLayout
+                p1:layout_width="fill_parent"
+                p1:layout_height="wrap_content">
+                <TextView
+                    p1:text="Talents"
+                    p1:textAppearance="?android:attr/textAppearanceMedium"
+                    p1:layout_width="wrap_content"
+                    p1:layout_height="wrap_content"
+                    p1:id="@+id/tv"
+                    p1:textColor="@color/black_grey" />
+                <ImageButton
+                    p1:layout_width="20dp"
+                    p1:layout_height="20dp"
+                    p1:id="@+id/im_talent"
+                    p1:src="@drawable/DD_icn_edit"
+                    p1:layout_margin="5dp"
+                    p1:layout_weight="1"
+                    p1:focusable="true"
+                    p1:scaleType="centerInside"
+                    p1:background="@color/transparent"
+                    p1:layout_gravity="right"
+                    p1:layout_alignParentRight="true"
+                    p1:layout_marginRight="10dp" />
+                <EditText
+                    p1:inputType="textMultiLine|textNoSuggestions"
+                    p1:layout_width="match_parent"
+                    p1:layout_height="wrap_content"
+                    p1:textAppearance="?android:attr/textAppearanceSmall"
+                    p1:id="@+id/tv_talent"
+                    p1:layout_below="@id/tv"
+                    p1:padding="10dp"
+                    p1:hint="Tell us about your talents." />
+            </RelativeLayout>
+        <!-- looking for -->
+            <RelativeLayout
+                p1:layout_width="fill_parent"
+                p1:layout_height="wrap_content">
+                <TextView
+                    p1:text="Looking for"
+                    p1:textAppearance="?android:attr/textAppearanceMedium"
+                    p1:layout_width="wrap_content"
+                    p1:layout_height="wrap_content"
+                    p1:id="@+id/tv"
+                    p1:textColor="@color/black_grey" />
+                <ImageButton
+                    p1:layout_width="20dp"
+                    p1:layout_height="20dp"
+                    p1:id="@+id/im_lookingFor"
+                    p1:src="@drawable/DD_icn_edit"
+                    p1:layout_margin="5dp"
+                    p1:layout_weight="1"
+                    p1:focusable="true"
+                    p1:scaleType="centerInside"
+                    p1:background="@color/transparent"
+                    p1:layout_gravity="right"
+                    p1:layout_alignParentRight="true"
+                    p1:layout_marginRight="10dp" />
+                <EditText
+                    p1:inputType="textMultiLine|textNoSuggestions"
+                    p1:layout_width="match_parent"
+                    p1:layout_height="wrap_content"
+                    p1:textAppearance="?android:attr/textAppearanceSmall"
+                    p1:id="@+id/tv_lookingfor"
+                    p1:layout_below="@id/tv"
+                    p1:padding="10dp"
+                    p1:hint="Tell us what you're looking for." />
+            </RelativeLayout>
+        <!-- connect -->
+            <RelativeLayout
+                p1:layout_width="fill_parent"
+                p1:layout_height="wrap_content">
+                <TextView
+                    p1:text="Connect to me"
+                    p1:textAppearance="?android:attr/textAppearanceMedium"
+                    p1:layout_width="wrap_content"
+                    p1:layout_height="wrap_content"
+                    p1:id="@+id/tv"
+                    p1:textColor="@color/black_grey" />
+                <ImageButton
+                    p1:layout_width="20dp"
+                    p1:layout_height="20dp"
+                    p1:id="@+id/im_connectme"
+                    p1:src="@drawable/DD_icn_edit"
+                    p1:layout_margin="5dp"
+                    p1:layout_weight="1"
+                    p1:focusable="true"
+                    p1:scaleType="centerInside"
+                    p1:background="@color/transparent"
+                    p1:layout_gravity="right"
+                    p1:layout_alignParentRight="true"
+                    p1:layout_marginRight="10dp" />
+                <EditText
+                    p1:inputType="textMultiLine|textNoSuggestions"
+                    p1:layout_width="match_parent"
+                    p1:layout_height="wrap_content"
+                    p1:id="@+id/tv_connectme"
+                    p1:layout_below="@id/tv"
+                    p1:textAppearance="?android:attr/textAppearanceSmall"
+                    p1:padding="10dp"
+                    p1:hint="Tell us why people should connect to you." />
+            </RelativeLayout>
+        <!-- goals -->
+            <RelativeLayout
+                p1:layout_width="fill_parent"
+                p1:layout_height="wrap_content">
+                <TextView
+                    p1:text="Goals"
+                    p1:textAppearance="?android:attr/textAppearanceMedium"
+                    p1:layout_width="wrap_content"
+                    p1:layout_height="wrap_content"
+                    p1:id="@+id/tv"
+                    p1:textColor="@color/black_grey" />
+                <ImageButton
+                    p1:layout_width="20dp"
+                    p1:layout_height="20dp"
+                    p1:id="@+id/im_goals"
+                    p1:src="@drawable/DD_icn_edit"
+                    p1:layout_margin="5dp"
+                    p1:layout_weight="1"
+                    p1:focusable="true"
+                    p1:scaleType="centerInside"
+                    p1:background="@color/transparent"
+                    p1:layout_gravity="right"
+                    p1:layout_alignParentRight="true"
+                    p1:layout_marginRight="10dp" />
+                <EditText
+                    p1:inputType="textMultiLine|textNoSuggestions"
+                    p1:layout_width="match_parent"
+                    p1:layout_height="wrap_content"
+                    p1:id="@+id/tv_goals"
+                    p1:layout_below="@id/tv"
+                    p1:textAppearance="?android:attr/textAppearanceSmall"
+                    p1:padding="10dp"
+                    p1:hint="Tell us about your goals." />
+            </RelativeLayout>
+        <!-- matters -->
+            <RelativeLayout
+                p1:layout_width="fill_parent"
+                p1:layout_height="wrap_content">
+                <TextView
+                    p1:text="Matters to me"
+                    p1:textAppearance="?android:attr/textAppearanceMedium"
+                    p1:layout_width="wrap_content"
+                    p1:layout_height="wrap_content"
+                    p1:id="@+id/tv"
+                    p1:textColor="@color/black_grey" />
+                <ImageButton
+                    p1:layout_width="20dp"
+                    p1:layout_height="20dp"
+                    p1:id="@+id/im_mattersme"
+                    p1:src="@drawable/DD_icn_edit"
+                    p1:layout_margin="5dp"
+                    p1:layout_weight="1"
+                    p1:focusable="true"
+                    p1:scaleType="centerInside"
+                    p1:background="@color/transparent"
+                    p1:layout_gravity="right"
+                    p1:layout_alignParentRight="true"
+                    p1:layout_marginRight="10dp" />
+                <EditText
+                    p1:inputType="textMultiLine|textNoSuggestions"
+                    p1:layout_width="match_parent"
+                    p1:layout_height="wrap_content"
+                    p1:id="@+id/tv_mattersme"
+                    p1:layout_below="@id/tv"
+                    p1:textAppearance="?android:attr/textAppearanceSmall"
+                    p1:padding="10dp"
+                    p1:hint="Tell us about what matters to you." />
+            </RelativeLayout>
+        <!-- interest -->
+            <RelativeLayout
+                p1:layout_width="fill_parent"
+                p1:layout_height="wrap_content">
+                <TextView
+                    p1:text="Interests"
+                    p1:textAppearance="?android:attr/textAppearanceMedium"
+                    p1:layout_width="wrap_content"
+                    p1:layout_height="wrap_content"
+                    p1:id="@+id/tv"
+                    p1:textColor="@color/black_grey" />
+                <ImageButton
+                    p1:layout_width="20dp"
+                    p1:layout_height="20dp"
+                    p1:id="@+id/im_interests"
+                    p1:src="@drawable/DD_icn_edit"
+                    p1:layout_margin="5dp"
+                    p1:layout_weight="1"
+                    p1:focusable="true"
+                    p1:scaleType="centerInside"
+                    p1:background="@color/transparent"
+                    p1:layout_gravity="right"
+                    p1:layout_alignParentRight="true"
+                    p1:layout_marginRight="10dp" />
+                <EditText
+                    p1:inputType="textMultiLine|textNoSuggestions"
+                    p1:layout_width="match_parent"
+                    p1:layout_height="wrap_content"
+                    p1:id="@+id/tv_interests"
+                    p1:layout_below="@id/tv"
+                    p1:textAppearance="?android:attr/textAppearanceSmall"
+                    p1:hint="Tell us about your interests."
+                    p1:padding="10dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

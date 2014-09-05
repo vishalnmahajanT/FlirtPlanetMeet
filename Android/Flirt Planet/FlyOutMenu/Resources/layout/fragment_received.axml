@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:background="@color/background_color">
+    <TextView
+        android:text="Your in received connections"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_recevied"
+        android:textColor="#ff474444"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/hero5_height"
+        android:typeface="normal"
+        android:textSize="25dp"
+        android:textStyle="normal" />
+    <flirtplanet.GridViewNoScroll
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/gv_pending"
+        android:stretchMode="columnWidth"
+        android:numColumns="auto_fit"
+        android:background="@color/background_color" />
+</LinearLayout>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffe0e0e0">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_color">
+        <TextView
+            android:text="Equipped"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView1"
+            android:textColor="#ff474444"
+            android:gravity="left"
+            android:textSize="23dp"
+            android:textStyle="normal"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:id="@+id/relativelayout1">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/ll_add_boost1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView
+                        android:src="@drawable/DD_Boosts_btn_add_boost"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:id="@+id/iv_add_boost1" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_add_boost1"
+                        android:textColor="#ff474444"
+                        android:layout_gravity="center"
+                        android:textStyle="normal"
+                        android:textSize="10dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/ll_add_boost2"
+                    android:orientation="vertical"
+                    android:layout_toRightOf="@id/ll_add_boost1"
+                    android:gravity="center">
+                    <ImageView
+                        android:src="@drawable/DD_Boosts_btn_add_boost"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:id="@+id/iv_add_boost2" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_add_boost2"
+                        android:textColor="#ff474444"
+                        android:textSize="10dp"
+                        android:textStyle="normal"
+                        android:layout_gravity="center" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/ll_add_boost3"
+                    android:orientation="vertical"
+                    android:layout_toRightOf="@id/ll_add_boost2"
+                    android:gravity="center">
+                    <ImageView
+                        android:src="@drawable/DD_Boosts_btn_add_boost"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:id="@+id/iv_add_boost3" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_add_boost3"
+                        android:textColor="#ff474444"
+                        android:textSize="10dp"
+                        android:textStyle="normal"
+                        android:layout_gravity="center" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/ll_add_boost4"
+                    android:orientation="vertical"
+                    android:layout_toRightOf="@id/ll_add_boost3"
+                    android:gravity="center">
+                    <ImageView
+                        android:src="@drawable/DD_Boosts_btn_add_boost"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:id="@+id/iv_add_boost4" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_add_boost4"
+                        android:textColor="#ff474444"
+                        android:textSize="10dp"
+                        android:textStyle="normal"
+                        android:layout_gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:text="Permanent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#ff474444"
+            android:textSize="23dp"
+            android:textStyle="normal" />
+        <flirtplanet.GridViewNoScroll
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gv_permanent"
+            android:stretchMode="columnWidth"
+            android:numColumns="auto_fit"
+            android:layout_gravity="center" />
+        <TextView
+            android:text="-No permanent items owned."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_permanent"
+            android:textColor="#ff474444"
+            android:textSize="15dp"
+            android:textStyle="normal" />
+        <TextView
+            android:text="Inventory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_inventory_title"
+            android:layout_marginLeft="10dp"
+            android:textColor="#ff474444"
+            android:textSize="23dp"
+            android:textStyle="normal" />
+        <flirtplanet.GridViewNoScroll
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gv_inventory"
+            android:stretchMode="columnWidth"
+            android:numColumns="auto_fit"
+            android:layout_gravity="center" />
+        <TextView
+            android:text="-No items that are not equipped."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_inventory"
+            android:textColor="#ff474444"
+            android:textSize="15dp"
+            android:textStyle="normal" />
+    </LinearLayout>
+</ScrollView>

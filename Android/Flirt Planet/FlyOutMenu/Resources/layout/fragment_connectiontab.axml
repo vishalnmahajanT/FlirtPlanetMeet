@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linearLayout1"
+    android:background="@color/background_color">
+    <TextView
+        android:text="Your Connections(0)"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_conn"
+        android:gravity="center_horizontal"
+        android:layout_margin="8dp"
+        android:textColor="#ff474444"
+        android:typeface="normal"
+        android:textSize="20dp"
+        android:background="@color/background_color" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/view2"
+        android:background="@color/solid_white" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_color"
+        android:id="@+id/ll_tabb"
+        style="@style/FlirtTheme">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background_color"
+            android:id="@+id/ll_tab"
+            android:padding="@dimen/abi_list_padding"
+            style="@style/FlirtTheme">
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="64dp"
+                android:id="@+id/btn_conn"
+                android:src="@drawable/DD_Con_icn_connections_resized"
+                android:layout_weight="1"
+                android:focusable="true"
+                android:scaleType="centerInside"
+                android:background="@color/transparent" />
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="64dp"
+                android:id="@+id/btn_entourage"
+                android:src="@drawable/DD_Con_icn_entourage_resized"
+                android:layout_weight="1"
+                android:focusable="true"
+                android:scaleType="centerInside"
+                android:background="@color/transparent" />
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="64dp"
+                android:id="@+id/btn_sent"
+                android:src="@drawable/DD_Con_icn_sent_resized"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:background="@color/transparent" />
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="64dp"
+                android:id="@+id/btn_received"
+                android:src="@drawable/DD_Con_icn_received_resized"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:background="@color/transparent" />
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="64dp"
+                android:id="@+id/btn_wathchlist"
+                android:src="@drawable/DD_Con_icn_watchlist_resized"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:background="@color/transparent" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/view1"
+        android:background="@color/dark_grey" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_color">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/ll_conn_container"
+            android:background="@color/background_color" />
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_color">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_color">
+        <TextView
+            android:text="Verify Location"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView1"
+            android:padding="10dp"
+            android:textColor="@color/black_grey"
+            android:layout_weight="1" />
+        <ImageView
+            android:src="@drawable/DD_Splash_btn_close"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/iv_close"
+            android:layout_marginRight="10dp"
+            android:padding="10dp" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/view1"
+        android:background="@color/solid_white" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1">
+        <TextView
+            android:text="City: "
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:layout_weight="3"
+            android:padding="10dp"
+            android:textColor="@color/black_grey" />
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner_city"
+            android:layout_weight="1"
+            android:padding="10dp" />
+    </LinearLayout>
+    <Button
+        android:text="Verify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_verify"
+        android:layout_gravity="center"
+        android:background="@color/aqua_blue"
+        android:textColor="@color/solid_white"
+        android:layout_margin="10dp" />
+</LinearLayout>

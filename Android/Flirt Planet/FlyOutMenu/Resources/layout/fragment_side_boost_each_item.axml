@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_color"
+    android:id="@+id/linearLayout2">
+    <ImageButton
+        android:src="@drawable/DD_Boosts_icn_shooting_star_bronze"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/iv_shotingstar"
+        android:scaleType="centerInside"
+        android:background="@color/transparent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll1"
+        android:layout_below="@id/iv_shotingstar"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:text="Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_title"
+            android:textSize="11dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:textColor="#ff474444"
+            android:layout_below="@id/iv_shotingstar"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:text="Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_viewers"
+            android:gravity="center_horizontal"
+            android:scrollbarStyle="insideInset"
+            android:textColor="#ff474444"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@id/tv_title"
+            android:layout_centerHorizontal="true"
+            android:textSize="9dp" />
+        <TextView
+            android:text="Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_utype"
+            android:textSize="9dp"
+            android:gravity="center_horizontal"
+            android:textColor="#ff474444"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@id/tv_viewers"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:text="Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_visibility"
+            android:textSize="9dp"
+            android:gravity="center_horizontal"
+            android:textColor="#ff474444"
+            android:layout_gravity="center"
+            android:layout_below="@id/tv_utype"
+            android:layout_centerHorizontal="true" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout1"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@id/tv_visibility"
+            android:layout_centerHorizontal="true">
+            <Button
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/btn_coins"
+                android:background="@drawable/DD_Boosts_icn_gold"
+                android:layout_below="@id/tv_visibility"
+                android:layout_marginBottom="5dp" />
+            <TextView
+                android:text="20"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:id="@+id/tv_price"
+                android:textStyle="normal"
+                android:textSize="10dp"
+                android:layout_gravity="center"
+                android:textColor="#ff474444"
+                android:layout_below="@id/tv_visibility"
+                android:gravity="center"
+                android:layout_marginLeft="2dp"
+                android:layout_marginBottom="5dp" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:id="@+id/btn_buy"
+                android:text="Buy Now!"
+                android:background="#33CCFF"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:layout_below="@id/tv_visibility"
+                android:layout_marginLeft="2dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="10dp" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

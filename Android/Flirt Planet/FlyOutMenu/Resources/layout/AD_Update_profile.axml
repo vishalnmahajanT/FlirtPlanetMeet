@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/scrollView1">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/background_color">
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout1"
+            android:layout_margin="10dp">
+            <TextView
+                android:text="Edit Basic Info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ff474444"
+                android:id="@+id/tv_title"
+                android:layout_margin="10dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true" />
+            <Button
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/btn_close"
+                android:src="@drawable/DD_Splash_btn_close"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:background="@drawable/DD_Splash_btn_close" />
+        </RelativeLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:id="@+id/view1"
+            android:background="@color/solid_white"
+            android:layout_marginBottom="8dp" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativeLayout1"
+            android:scaleX="1"
+            android:scaleY="1"
+            android:layout_marginRight="0.0dp">
+            <TextView
+                android:text="Age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_age"
+                android:textColor="#ff474444"
+                android:layout_margin="5dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_age"
+                android:textColor="#ff474444"
+                android:text="Date"
+                android:id="@+id/tv_date"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:layout_centerHorizontal="true" />
+            <TextView
+                android:text="Gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_age"
+                android:id="@+id/tv_gender"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/black_grey" />
+            <TextView
+                android:id="@+id/spinner_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_gender"
+                android:entries="@array/gender_array"
+                android:layout_below="@id/tv_date"
+                android:textColor="@color/black_grey"
+                android:text="Gender"
+                android:gravity="center"
+                android:layout_marginTop="15dp" />
+            <TextView
+                android:text="Orientation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_gender"
+                android:id="@+id/tv_orientation"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/black_grey" />
+            <Spinner
+                android:id="@+id/spinner_orientation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spinner_gender"
+                android:layout_toRightOf="@id/tv_orientation"
+                android:entries="@array/orientation_array"
+                android:textColor="@color/black_grey"
+                android:layout_marginTop="15dp" />
+            <TextView
+                android:text="Location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_orientation"
+                android:id="@+id/tv_location"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/black_grey" />
+            <TextView
+                android:text=" hello   "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spinner_orientation"
+                android:id="@+id/et_location"
+                android:textColor="@color/black_grey"
+                android:drawableBottom="@color/black"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp" />
+        </RelativeLayout>
+        <Button
+            android:text="       UPDATE       "
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_update"
+            android:background="#33CCFF"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/solid_white"
+            android:layout_width="wrap_content"
+            android:layout_margin="20dp" />
+    </LinearLayout>
+</ScrollView>

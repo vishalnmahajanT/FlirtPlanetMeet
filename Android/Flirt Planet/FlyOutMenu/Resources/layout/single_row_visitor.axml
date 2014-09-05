@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:minWidth="25px"
+    p1:minHeight="25px"
+    p1:layout_width="match_parent"
+    p1:layout_height="wrap_content"
+    p1:id="@+id/relativeLayout1"
+    p1:background="@color/background_color">
+    <ImageView
+        p1:src="@android:drawable/ic_menu_gallery"
+        p1:layout_width="58.1dp"
+        p1:layout_height="60.1dp"
+        p1:id="@+id/im_visitorImage"
+        p1:layout_marginLeft="10dp"
+        p1:layout_marginTop="10dp"
+        p1:layout_marginRight="10dp"
+        p1:layout_marginBottom="10dp" />
+    <TextView
+        p1:text="Today at 9 PM"
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:layout_toRightOf="@id/im_visitorImage"
+        p1:id="@+id/tv_timeStamp"
+        p1:gravity="right"
+        p1:layout_alignParentRight="true"
+        p1:layout_marginRight="10dp"
+        p1:textColor="@color/black_grey"
+        p1:textAppearance="?android:attr/textAppearanceSmall"
+        p1:textSize="10dp" />
+    <TextView
+        p1:text="Jagannath"
+        p1:textAppearance="?android:attr/textAppearanceMedium"
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:layout_toRightOf="@id/im_visitorImage"
+        p1:id="@+id/tv_visitorName"
+        p1:layout_centerVertical="true"
+        p1:textColor="@color/black_grey" />
+</RelativeLayout>

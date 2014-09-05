@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/black"
+    style="@style/FlirtTheme">
+    <LinearLayout
+        android:id="@+id/image_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:src="@drawable/HeartomaticTitle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="65dp"
+            android:id="@+id/imageView1"
+            android:layout_gravity="top"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+        <ImageView
+            android:src="@drawable/DD_Splash_btn_close_white"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/iv_close"
+            android:layout_toRightOf="@id/imageView1" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonLayout"
+        android:layout_alignParentBottom="true">
+        <View
+            android:id="@+id/view1"
+            android:background="@color/black_grey"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_marginBottom="10dp" />
+        <LinearLayout
+            android:id="@+id/button_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <!-- <Button
+                android:id="@+id/btn_QuizCancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_weight="1"
+                android:text="CANCEL"
+                android:layout_marginBottom="10dp" /> -->
+            <Button
+                android:id="@+id/btn_continue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="SELECT TO CONTINUE"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/solid_white" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_layout"
+        android:layout_above="@id/buttonLayout"
+        android:id="@+id/spinner_layout">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+            <TextView
+                android:text="WITH"
+                android:id="@+id/tv_whichHand"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/solid_white"
+                android:gravity="center" />
+            <Spinner
+                android:id="@+id/sp_SelectHand"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:gravity="center" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

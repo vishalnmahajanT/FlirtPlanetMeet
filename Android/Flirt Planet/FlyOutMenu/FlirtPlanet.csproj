@@ -1,0 +1,595 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DC4A371A-1B94-4270-9EB6-F44A59153567}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>flirtplanet</RootNamespace>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AssemblyName>FlyOutMenu</AssemblyName>
+    <TargetFrameworkVersion>v4.0.3</TargetFrameworkVersion>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <ConsolePause>false</ConsolePause>
+    <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <AndroidSupportedAbis>armeabi;armeabi-v7a;x86</AndroidSupportedAbis>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Json" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\Components\json.net-4.5.11\lib\android\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="RadialProgress.Android">
+      <HintPath>..\Components\radialprogress-1.0.1\lib\android\RadialProgress.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Android.Support.v4" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="GCM.Client">
+      <HintPath>..\Components\GCMClient-1.0\lib\android\GCM.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.InAppBilling">
+      <HintPath>..\Components\xamarin.inappbilling-1.5\lib\android\Xamarin.InAppBilling.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MyActionBarDrawerToggle.cs" />
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="FlyOutContainer.cs" />
+    <Compile Include="Core\Constants.cs" />
+    <Compile Include="Core\Logger.cs" />
+    <Compile Include="Core\WebService.cs" />
+    <Compile Include="Core\Business\BoostBus.cs" />
+    <Compile Include="Core\Business\BusinessBase.cs" />
+    <Compile Include="Core\Business\ConnectionBus.cs" />
+    <Compile Include="Core\Business\FlirtmailBus.cs" />
+    <Compile Include="Core\Business\GeoBus.cs" />
+    <Compile Include="Core\Business\HomeBus.cs" />
+    <Compile Include="Core\Business\MatchingSauceBus.cs" />
+    <Compile Include="Core\Business\MeetBus.cs" />
+    <Compile Include="Core\Business\ProfileBus.cs" />
+    <Compile Include="Core\Business\SettingsBus.cs" />
+    <Compile Include="Core\Data\AppUser.cs" />
+    <Compile Include="Core\Data\Connection.cs" />
+    <Compile Include="Core\Data\Country.cs" />
+    <Compile Include="Core\Data\DetailAnswer.cs" />
+    <Compile Include="Core\Data\DetailQuestion.cs" />
+    <Compile Include="Core\Data\Entourage.cs" />
+    <Compile Include="Core\Data\ExternalFriend.cs" />
+    <Compile Include="Core\Data\FBPhoto.cs" />
+    <Compile Include="Core\Data\FBPhotoAlbum.cs" />
+    <Compile Include="Core\Data\FlirtJuice.cs" />
+    <Compile Include="Core\Data\Flirtmail.cs" />
+    <Compile Include="Core\Data\Goal.cs" />
+    <Compile Include="Core\Data\Item.cs" />
+    <Compile Include="Core\Data\Location.cs" />
+    <Compile Include="Core\Data\Match.cs" />
+    <Compile Include="Core\Data\MatchingSauce.cs" />
+    <Compile Include="Core\Data\MeetFetcher.cs" />
+    <Compile Include="Core\Data\Notifications.cs" />
+    <Compile Include="Core\Data\PendingConnection.cs" />
+    <Compile Include="Core\Data\Photo.cs" />
+    <Compile Include="Core\Data\Region.cs" />
+    <Compile Include="Core\Data\Review.cs" />
+    <Compile Include="Core\Data\SecondOpinion.cs" />
+    <Compile Include="Core\Data\SentConnection.cs" />
+    <Compile Include="Core\Data\Settings.cs" />
+    <Compile Include="Core\Data\User.cs" />
+    <Compile Include="Core\Data\Visitor.cs" />
+    <Compile Include="Core\Data\Watched.cs" />
+    <Compile Include="Core\Properties\AssemblyInfo.cs" />
+    <Compile Include="PreferencesQuiz.cs" />
+    <Compile Include="Fragments\FragmentSettings.cs" />
+    <Compile Include="Fragments\FragmentHome.cs" />
+    <Compile Include="Fragments\FragmentMeet.cs" />
+    <Compile Include="Fragments\FragmentProfile.cs" />
+    <Compile Include="Fragments\FragmentMail.cs" />
+    <Compile Include="Fragments\FragmentCompose.cs" />
+    <Compile Include="Fragments\FragmentOnMenu.cs" />
+    <Compile Include="Fragments\FragmentSauce.cs" />
+    <Compile Include="Fragments\FragmentAvatar.cs" />
+    <Compile Include="Fragments\FragmentConnectionTab.cs" />
+    <Compile Include="Fragments\FragmentConnections.cs" />
+    <Compile Include="Fragments\FragmentSent.cs" />
+    <Compile Include="Fragments\FragmentReceived.cs" />
+    <Compile Include="Fragments\FragmentWatchList.cs" />
+    <Compile Include="Fragments\FragmentBoost.cs" />
+    <Compile Include="Fragments\FragmentSideBoost.cs" />
+    <Compile Include="Fragments\FragmentSideInventory.cs" />
+    <Compile Include="Fragments\FragmentSideJuicePack.cs" />
+    <Compile Include="ProfileData.cs" />
+    <Compile Include="Fragments\FragmentUserProfile.cs" />
+    <Compile Include="SlidingPaneLayoutActivity.cs" />
+    <Compile Include="CircleDrawable.cs" />
+    <Compile Include="Fragments\FragmentNewUserSignUp.cs" />
+    <Compile Include="GridViewNoScroll.cs" />
+    <Compile Include="FlirtPlanetActivity.cs" />
+    <Compile Include="HelloFacebookSampleActivity.cs" />
+    <Compile Include="ListViewNoScroll.cs" />
+    <Compile Include="Fragments\FragmentMainUserProfile.cs" />
+    <Compile Include="Common\MainUser.cs" />
+    <Compile Include="Fragments\FragmentMeetSearchResults.cs" />
+    <Compile Include="Adapters\ImageAdapter.cs" />
+    <Compile Include="Fragments\FragmentUserGallery.cs" />
+    <Compile Include="Adapters\DetailsAdapter.cs" />
+    <Compile Include="Common\Popup.cs" />
+    <Compile Include="Common\DialogView.cs" />
+    <Compile Include="Fragments\PopupVisitor.cs" />
+    <Compile Include="Fragments\FragmentDatePickerDialog.cs" />
+    <Compile Include="Fragments\FragmentPending.cs" />
+    <Compile Include="Common\ImageTask.cs" />
+    <Compile Include="NIMP\NimpData.cs" />
+    <Compile Include="NIMP\NimpTrial.cs" />
+    <Compile Include="Fragments\FragmentEntourage.cs" />
+    <Compile Include="Fragments\FragmentReview.cs" />
+    <Compile Include="NIMP\NimpController.cs" />
+    <Compile Include="Common\DelegateEvent.cs" />
+    <Compile Include="NIMP\NimpPlayPopup.cs" />
+    <Compile Include="NIMP\NimpCountdownAnim.cs" />
+    <Compile Include="NIMP\NimpDemoPopup.cs" />
+    <Compile Include="Common\GRTools.cs" />
+    <Compile Include="NIMP\NimpRewardPopup.cs" />
+    <Compile Include="Common\ImageDownloader.cs" />
+    <Compile Include="Common\ThrottledHttp.cs" />
+    <Compile Include="Common\AndroidImageDownloader.cs" />
+    <Compile Include="CircleProgress.cs" />
+    <Compile Include="Fragments\FragmentFacebookAlbums.cs" />
+    <Compile Include="Fragments\FragmentFacebookAlbumPhotos.cs" />
+    <Compile Include="ImageHelper\DownloaderAsyncTask.cs" />
+    <Compile Include="ImageHelper\ExtensionMethods.cs" />
+    <Compile Include="ImageHelper\Hashset.cs" />
+    <Compile Include="ImageHelper\LRUCache.cs" />
+    <Compile Include="ImageHelper\SoftReference.cs" />
+    <Compile Include="ImageHelper\SoftReferenceHashTable.cs" />
+    <Compile Include="ImageHelper\UrlImageCache.cs" />
+    <Compile Include="ImageHelper\UrlImageViewCallback.cs" />
+    <Compile Include="ImageHelper\UrlImageViewHelper.cs" />
+    <Compile Include="Adapters\asynchAdapter.cs" />
+    <Compile Include="NIMP\MSZodiacElement.cs" />
+    <Compile Include="CircleImageProgress.cs" />
+    <Compile Include="BoostItem.cs" />
+    <Compile Include="InventoryItem.cs" />
+    <Compile Include="Fragments\FragmentMailDetails.cs" />
+    <Compile Include="Fragments\FragmentUserSauce.cs" />
+    <Compile Include="Common\MyC2dmReceiver.cs" />
+    <Compile Include="DetailsGridNoScroll.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Assets\AboutAssets.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+    <None Include="Core\.DS_Store" />
+    <None Include="Core\Core.csproj" />
+    <None Include="Core\Business\.DS_Store" />
+    <None Include="Core\bin\iPhone\Debug\Core.dll" />
+    <None Include="Core\bin\iPhone\Debug\Core.dll.mdb" />
+    <None Include="Core\bin\iPhone\Debug\Newtonsoft.Json.dll" />
+    <None Include="Core\bin\iPhone\Release\Core.dll" />
+    <None Include="Core\bin\iPhone\Release\Newtonsoft.Json.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\Main.axml" />
+    <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\drawable\Icon.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\icon1.png" />
+    <AndroidResource Include="Resources\drawable\icon1.png" />
+    <AndroidResource Include="Resources\drawable\iconelse.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\iconelse.png" />
+    <AndroidResource Include="Resources\layout\MenuLayout.axml" />
+    <AndroidResource Include="Resources\layout\ContentLayout.axml" />
+    <AndroidResource Include="Resources\drawable\action_menu.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\action_menu.png" />
+    <AndroidResource Include="Resources\drawable\DD_MS_icn_matching_sauce_gray.png" />
+    <AndroidResource Include="Resources\drawable\DD_MS_icn_menu_boosts.png" />
+    <AndroidResource Include="Resources\drawable\DD_MS_icn_menu_connections.png" />
+    <AndroidResource Include="Resources\drawable\DD_MS_icn_menu_flirt_gold.png" />
+    <AndroidResource Include="Resources\drawable\DD_MS_icn_menu_flirt_juice.png" />
+    <AndroidResource Include="Resources\drawable\DD_MS_icn_menu_home.png" />
+    <AndroidResource Include="Resources\drawable\DD_MS_icn_menu_mail.png" />
+    <AndroidResource Include="Resources\drawable\DD_MS_icn_menu_meet.png" />
+    <AndroidResource Include="Resources\drawable\DD_Con_icn_received.png" />
+    <AndroidResource Include="Resources\drawable\DD_Header_icn_settings_hit.png" />
+    <AndroidResource Include="Resources\drawable\DD_Header_icn_settings.png" />
+    <AndroidResource Include="Resources\drawable\DD_MS_icn_menu_settings.png" />
+    <AndroidResource Include="Resources\values\arrays.xml" />
+    <AndroidResource Include="Resources\values\attrs.xml" />
+    <AndroidResource Include="Resources\values\bools.xml" />
+    <AndroidResource Include="Resources\values\colors.xml" />
+    <AndroidResource Include="Resources\values\dimens.xml" />
+    <AndroidResource Include="Resources\drawable\DD_Header_icn_notification.png" />
+    <AndroidResource Include="Resources\drawable\DD_Header_icn_profile.png" />
+    <AndroidResource Include="Resources\drawable\DD_Header_LogoSmall.png" />
+    <AndroidResource Include="Resources\drawable\DD_FG_icn_20_flirt_gold.png" />
+    <AndroidResource Include="Resources\drawable\DD_FG_icn_90_flirt_gold.png" />
+    <AndroidResource Include="Resources\drawable\DD_FG_icn_110_flirt_gold.png" />
+    <AndroidResource Include="Resources\drawable\DD_FG_icn_335_flirt_gold.png" />
+    <AndroidResource Include="Resources\drawable\DD_FG_icn_1190_flirt_gold.png" />
+    <AndroidResource Include="Resources\drawable\DD_FG_icn_2800_flirt_gold.png" />
+    <AndroidResource Include="Resources\drawable\DD_FJ_icn_flirt_juice_1pack.png" />
+    <AndroidResource Include="Resources\drawable\DD_FJ_icn_flirt_juice_5packs.png" />
+    <AndroidResource Include="Resources\drawable\DD_FJ_icn_flirt_juice_20packs.png" />
+    <AndroidResource Include="Resources\layout\AD_BuyFlirtGold.axml" />
+    <AndroidResource Include="Resources\layout\AD_GetMoreFlirtJuice.axml" />
+    <AndroidResource Include="Resources\drawable\DD_Con_icn_connections.png" />
+    <AndroidResource Include="Resources\layout\fragment_settings.axml" />
+    <AndroidResource Include="Resources\menu\profile_menu.axml" />
+    <AndroidResource Include="Resources\values\styles.xml" />
+    <AndroidResource Include="Resources\layout\profile_popup.axml" />
+    <AndroidResource Include="Resources\drawable\DD_profile_flag_unconnect.png" />
+    <AndroidResource Include="Resources\layout\AD_DailyBonus.axml" />
+    <AndroidResource Include="Resources\drawable\DD_icn_drop.png" />
+    <AndroidResource Include="Resources\layout\AD_PreferencesQuiz.axml" />
+    <AndroidResource Include="Resources\layout\fragment_home.axml" />
+    <AndroidResource Include="Resources\drawable\HeartomaticTitle.png" />
+    <AndroidResource Include="Resources\drawable\DD_Boosts_boost_placeholder.png" />
+    <AndroidResource Include="Resources\drawable\DD_Boosts_btn_add_boost.png" />
+    <AndroidResource Include="Resources\drawable\DD_Boosts_icn_bottle0.png" />
+    <AndroidResource Include="Resources\drawable\DD_Boosts_icn_bottle1.png" />
+    <AndroidResource Include="Resources\drawable\DD_Boosts_icn_bottle2.png" />
+    <AndroidResource Include="Resources\drawable\DD_Boosts_icn_bottle3.png" />
+    <AndroidResource Include="Resources\drawable\DD_Boosts_icn_bottle4.png" />
+    <AndroidResource Include="Resources\drawable\DD_Boosts_icn_bottle5.png" />
+    <AndroidResource Include="Resources\drawable\DD_Boosts_icn_cloaking_device.png" />
+    <AndroidResource Include="Resources\drawable\DD_Boosts_icn_facebook.png" />
+    <AndroidResource Include="Resources\drawable\DD_Boosts_icn_gold.png" />
+    <AndroidResource Include="Resources\drawable\DD_Boosts_icn_hide_connections.png" />
+    <AndroidResource Include="Resources\drawable\DD_Boosts_icn_quality_scanner_bronze.png" />
+    <AndroidResource Include="Resources\drawable\DD_Boosts_icn_quality_scanner_gold.png" />
+    <AndroidResource Include="Resources\drawable\DD_Boosts_icn_quality_scanner_silver.png" />
+    <AndroidResource Include="Resources\drawable\DD_Boosts_icn_shooting_star_bronze.png" />
+    <AndroidResource Include="Resources\drawable\DD_Boosts_icn_shooting_star_gold.png" />
+    <AndroidResource Include="Resources\drawable\DD_Boosts_icn_shooting_star_silver.png" />
+    <AndroidResource Include="Resources\drawable\DD_Boosts_icn_side_boosts_hit.png" />
+    <AndroidResource Include="Resources\drawable\DD_Boosts_icn_side_boosts.png" />
+    <AndroidResource Include="Resources\drawable\DD_Boosts_icn_side_inventory_hit.png" />
+    <AndroidResource Include="Resources\drawable\DD_Boosts_icn_side_inventory.png" />
+    <AndroidResource Include="Resources\drawable\DD_Boosts_icn_side_juicepack_hit.png" />
+    <AndroidResource Include="Resources\drawable\DD_Boosts_icn_side_juicepack.png" />
+    <AndroidResource Include="Resources\drawable\DD_btn_back_chevron_white.png" />
+    <AndroidResource Include="Resources\drawable\DD_btn_back_chevron.png" />
+    <AndroidResource Include="Resources\drawable\DD_btn_back.png" />
+    <AndroidResource Include="Resources\drawable\DD_Con_icn_accept.png" />
+    <AndroidResource Include="Resources\drawable\DD_Con_icn_add_to_watchlist.png" />
+    <AndroidResource Include="Resources\drawable\DD_Con_icn_connections_hit.png" />
+    <AndroidResource Include="Resources\drawable\DD_Con_icn_decline.png" />
+    <AndroidResource Include="Resources\drawable\DD_Con_icn_entourage_hit.png" />
+    <AndroidResource Include="Resources\drawable\DD_Con_icn_entourage.png" />
+    <AndroidResource Include="Resources\drawable\DD_Con_icn_flirt_planet.png" />
+    <AndroidResource Include="Resources\drawable\DD_Con_icn_matching_sauce.png" />
+    <AndroidResource Include="Resources\drawable\DD_Con_icn_priorty_message.png" />
+    <AndroidResource Include="Resources\drawable\DD_Con_icn_received_hit.png" />
+    <AndroidResource Include="Resources\drawable\DD_Con_icn_ribbon_from_watchlist.png" />
+    <AndroidResource Include="Resources\drawable\DD_Con_icn_ribbon_sentrequests.png" />
+    <AndroidResource Include="Resources\drawable\DD_Con_icn_second_opinion_hit.png" />
+    <AndroidResource Include="Resources\drawable\DD_Con_icn_second_opinion.png" />
+    <AndroidResource Include="Resources\drawable\DD_Con_icn_sent_hit.png" />
+    <AndroidResource Include="Resources\drawable\DD_Con_icn_sent.png" />
+    <AndroidResource Include="Resources\drawable\DD_Con_icn_watchlist_hit.png" />
+    <AndroidResource Include="Resources\drawable\DD_Con_icn_watchlist.png" />
+    <AndroidResource Include="Resources\drawable\DD_DefaultImage_loading.png" />
+    <AndroidResource Include="Resources\drawable\DD_DefaultImage.png" />
+    <AndroidResource Include="Resources\drawable\DD_FG_icn_10_bonus.png" />
+    <AndroidResource Include="Resources\drawable\DD_FG_icn_15_bonus.png" />
+    <AndroidResource Include="Resources\drawable\DD_FG_icn_50_bonus.png" />
+    <AndroidResource Include="Resources\drawable\DD_FG_icn_75_bonus.png" />
+    <AndroidResource Include="Resources\drawable\DD_FJ_icn_10_discount.png" />
+    <AndroidResource Include="Resources\drawable\DD_FJ_icn_20_discount.png" />
+    <AndroidResource Include="Resources\drawable\DD_FJ_icn_25_discount.png" />
+    <AndroidResource Include="Resources\drawable\DD_FJ_icn_40_discount.png" />
+    <AndroidResource Include="Resources\drawable\DD_FlirtMail_icn_new_message_white.png" />
+    <AndroidResource Include="Resources\drawable\DD_FlirtMail_icn_new_message.png" />
+    <AndroidResource Include="Resources\drawable\DD_FlirtMail_icn_send_message.png" />
+    <AndroidResource Include="Resources\drawable\DD_Global_HorizTabBar.png" />
+    <AndroidResource Include="Resources\drawable\DD_Header_icn_chevron.png" />
+    <AndroidResource Include="Resources\drawable\DD_Header_icn_inventory.png" />
+    <AndroidResource Include="Resources\drawable\DD_Header_icn_matching_sauce.png" />
+    <AndroidResource Include="Resources\drawable\DD_Header_icn_menu.png" />
+    <AndroidResource Include="Resources\drawable\DD_Header_icn_new_notifications_hit.png" />
+    <AndroidResource Include="Resources\drawable\DD_Header_icn_new_notifications.png" />
+    <AndroidResource Include="Resources\drawable\DD_Header_icn_notification_counter.png" />
+    <AndroidResource Include="Resources\drawable\DD_Header_icn_notification_hit.png" />
+    <AndroidResource Include="Resources\drawable\DD_Header_icn_pending.png" />
+    <AndroidResource Include="Resources\drawable\DD_Header_icn_profile_hit.png" />
+    <AndroidResource Include="Resources\drawable\DD_Header_icn_tickbox_empty.png" />
+    <AndroidResource Include="Resources\drawable\DD_Header_icn_tickbox_green.png" />
+    <AndroidResource Include="Resources\drawable\DD_Header_icn_tickbox.png" />
+    <AndroidResource Include="Resources\drawable\DD_Header_icn_unread_messages.png" />
+    <AndroidResource Include="Resources\drawable\DD_Home_Chart_frame.png" />
+    <AndroidResource Include="Resources\drawable\DD_Home_chisel_line_long_vertical.png" />
+    <AndroidResource Include="Resources\drawable\DD_Home_chisel_short_horizontal.png" />
+    <AndroidResource Include="Resources\drawable\DD_Home_logo_flirt_planet.png" />
+    <AndroidResource Include="Resources\drawable\DD_Home_Photo_mask.png" />
+    <AndroidResource Include="Resources\drawable\DD_icn_connect.png" />
+    <AndroidResource Include="Resources\drawable\DD_icn_edit.png" />
+    <AndroidResource Include="Resources\drawable\DD_icn_facebook_white.png" />
+    <AndroidResource Include="Resources\drawable\DD_icn_flirtjuice_note.png" />
+    <AndroidResource Include="Resources\drawable\DD_icn_gold.png" />
+    <AndroidResource Include="Resources\drawable\DD_icn_second_opinion_review.png" />
+    <AndroidResource Include="Resources\drawable\DD_icn_second_opinion_white.png" />
+    <AndroidResource Include="Resources\drawable\DD_Meet_icn_filter_blue_expand.png" />
+    <AndroidResource Include="Resources\drawable\DD_Meet_icn_filter_blue_minimise.png" />
+    <AndroidResource Include="Resources\drawable\DD_Meet_icn_filter_expand.png" />
+    <AndroidResource Include="Resources\drawable\DD_Meet_icn_filter_minimise.png" />
+    <AndroidResource Include="Resources\drawable\DD_Meet_icn_profile_details_hit.png" />
+    <AndroidResource Include="Resources\drawable\DD_Meet_icn_profile_details.png" />
+    <AndroidResource Include="Resources\drawable\DD_MS_icn_matching_sauce.png" />
+    <AndroidResource Include="Resources\drawable\DD_MS_icn_zodiac_aquarius.png" />
+    <AndroidResource Include="Resources\drawable\DD_MS_icn_zodiac_aries.png" />
+    <AndroidResource Include="Resources\drawable\DD_MS_icn_zodiac_cancer.png" />
+    <AndroidResource Include="Resources\drawable\DD_MS_icn_zodiac_capricorn.png" />
+    <AndroidResource Include="Resources\drawable\DD_MS_icn_zodiac_gemini.png" />
+    <AndroidResource Include="Resources\drawable\DD_MS_icn_zodiac_leo.png" />
+    <AndroidResource Include="Resources\drawable\DD_MS_icn_zodiac_libra.png" />
+    <AndroidResource Include="Resources\drawable\DD_MS_icn_zodiac_pisces.png" />
+    <AndroidResource Include="Resources\drawable\DD_MS_icn_zodiac_sagittarius.png" />
+    <AndroidResource Include="Resources\drawable\DD_MS_icn_zodiac_scorpio.png" />
+    <AndroidResource Include="Resources\drawable\DD_MS_icn_zodiac_taurus.png" />
+    <AndroidResource Include="Resources\drawable\DD_MS_icn_zodiac_virgo.png" />
+    <AndroidResource Include="Resources\drawable\DD_overlay_short.png" />
+    <AndroidResource Include="Resources\drawable\DD_profile_icn_connect_mobile_disabled.png" />
+    <AndroidResource Include="Resources\drawable\DD_profile_icn_connect_mobile.png" />
+    <AndroidResource Include="Resources\drawable\DD_profile_icn_connections_mobile.png" />
+    <AndroidResource Include="Resources\drawable\DD_profile_icn_exclamation.png" />
+    <AndroidResource Include="Resources\drawable\DD_profile_icn_facebook_mobile.png" />
+    <AndroidResource Include="Resources\drawable\DD_profile_icn_matching_sauce_mobile.png" />
+    <AndroidResource Include="Resources\drawable\DD_profile_icn_reviews_mobile.png" />
+    <AndroidResource Include="Resources\drawable\DD_profile_star_empty.png" />
+    <AndroidResource Include="Resources\drawable\DD_profile_star_filled.png" />
+    <AndroidResource Include="Resources\drawable\DD_Splash_btn_close_gray.png" />
+    <AndroidResource Include="Resources\drawable\DD_Splash_btn_close_white.png" />
+    <AndroidResource Include="Resources\drawable\DD_Splash_btn_close.png" />
+    <AndroidResource Include="Resources\drawable\DD_Splash_btn_Start_not_grey.png" />
+    <AndroidResource Include="Resources\drawable\DD_Splash_btn_start_now.png" />
+    <AndroidResource Include="Resources\drawable\DD_Splash_Logo.png" />
+    <AndroidResource Include="Resources\drawable\DD_Tab_Blue.png" />
+    <AndroidResource Include="Resources\drawable\detail_bodyart_blue.png" />
+    <AndroidResource Include="Resources\drawable\detail_bodyart_grey.png" />
+    <AndroidResource Include="Resources\drawable\detail_bodytype_blue.png" />
+    <AndroidResource Include="Resources\drawable\detail_diet_blue.png" />
+    <AndroidResource Include="Resources\drawable\detail_diet_grey.png" />
+    <AndroidResource Include="Resources\drawable\detail_education_blue.png" />
+    <AndroidResource Include="Resources\drawable\detail_ethnicity_blue.png" />
+    <AndroidResource Include="Resources\drawable\detail_ethnicity_grey.png" />
+    <AndroidResource Include="Resources\drawable\detail_habits_blue.png" />
+    <AndroidResource Include="Resources\drawable\detail_habits_grey.png" />
+    <AndroidResource Include="Resources\drawable\detail_income_blue.png" />
+    <AndroidResource Include="Resources\drawable\detail_income_grey.png" />
+    <AndroidResource Include="Resources\drawable\detail_kids_blue.png" />
+    <AndroidResource Include="Resources\drawable\detail_kids_grey.png" />
+    <AndroidResource Include="Resources\drawable\detail_pets_blue.png" />
+    <AndroidResource Include="Resources\drawable\detail_pets_grey.png" />
+    <AndroidResource Include="Resources\drawable\detail_religion_blue.png" />
+    <AndroidResource Include="Resources\drawable\detail_religion_grey.png" />
+    <AndroidResource Include="Resources\drawable\detail_speaks_blue.png" />
+    <AndroidResource Include="Resources\drawable\detail_speaks_grey.png" />
+    <AndroidResource Include="Resources\drawable\detail_bodytype_grey.png" />
+    <AndroidResource Include="Resources\drawable\detail_education_grey.png" />
+    <AndroidResource Include="Resources\drawable\detail_height_blue.png" />
+    <AndroidResource Include="Resources\drawable\detail_height_grey.png" />
+    <AndroidResource Include="Resources\layout\fragment_confirmavatar.axml" />
+    <AndroidResource Include="Resources\layout\footer.axml" />
+    <AndroidResource Include="Resources\layout\fragment_mail.axml" />
+    <AndroidResource Include="Resources\layout\fragment_composeMail.axml" />
+    <AndroidResource Include="Resources\layout\fragment_onMenu.axml" />
+    <AndroidResource Include="Resources\layout\radial.axml" />
+    <AndroidResource Include="Resources\layout\fragment_connectiontab.axml" />
+    <AndroidResource Include="Resources\layout\fragment_connections.axml" />
+    <AndroidResource Include="Resources\layout\fragment_sent.axml" />
+    <AndroidResource Include="Resources\layout\fragment_received.axml" />
+    <AndroidResource Include="Resources\layout\fragment_watchlist.axml" />
+    <AndroidResource Include="Resources\drawable\button_connection_layout.axml" />
+    <AndroidResource Include="Resources\layout\fragment_userProfile.axml" />
+    <AndroidResource Include="Resources\layout\AD_NewUserSignUp.axml" />
+    <AndroidResource Include="Resources\layout\DrawerListItem.axml" />
+    <AndroidResource Include="Resources\layout\AquaBlue.axml" />
+    <AndroidResource Include="Resources\layout\cell_divide_line.axml" />
+    <AndroidResource Include="Resources\layout\DustyRose.axml" />
+    <AndroidResource Include="Resources\layout\Lavender.axml" />
+    <AndroidResource Include="Resources\layout\fragment_sauce.axml" />
+    <AndroidResource Include="Resources\layout\GridItem.axml" />
+    <AndroidResource Include="Resources\layout\grid.axml" />
+    <AndroidResource Include="Resources\layout\fragment_Boost.axml" />
+    <AndroidResource Include="Resources\layout\fragment_side_boost.axml" />
+    <AndroidResource Include="Resources\layout\fragment_side_inventory.axml" />
+    <AndroidResource Include="Resources\layout\fragment_side_juicepack.axml" />
+    <AndroidResource Include="Resources\layout\fragment_side_boosts_permanent.axml" />
+    <AndroidResource Include="Resources\layout\shooting_star_bronze.axml" />
+    <AndroidResource Include="Resources\layout\shooting_star_silver.axml" />
+    <AndroidResource Include="Resources\layout\fragment_juice_pack.axml" />
+    <AndroidResource Include="Resources\drawable\progressbar.axml" />
+    <AndroidResource Include="Resources\drawable\AD_DailyBonus.axml" />
+    <AndroidResource Include="Resources\layout\DustyRose.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\FragmentPlanet.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\SlidingPaneLayout.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\menu\main.xml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\action_search.png" />
+    <AndroidResource Include="Resources\drawable\drawer_shadow.9.png" />
+    <AndroidResource Include="Resources\drawable\ic_drawer.png" />
+    <AndroidResource Include="Resources\drawable\ic_launcher.png" />
+    <AndroidResource Include="Resources\drawable\action_other.png" />
+    <AndroidResource Include="Resources\drawable\drawer_shadow_dark.9.png" />
+    <AndroidResource Include="Resources\drawable\drawer_shadow_light.9.png" />
+    <AndroidResource Include="Resources\drawable\ic_drawer_dark.png" />
+    <AndroidResource Include="Resources\drawable\ic_drawer_light.png" />
+    <AndroidResource Include="Resources\layout\Splash.axml" />
+    <AndroidResource Include="Resources\layout\AD_UpdateLocation.axml" />
+    <AndroidResource Include="Resources\layout\AD_VerifyLocation.axml" />
+    <AndroidResource Include="Resources\layout\fragment_profile.axml" />
+    <AndroidResource Include="Resources\layout\fragment_meetSearchResults.axml" />
+    <AndroidResource Include="Resources\layout\userGallery.axml" />
+    <AndroidResource Include="Resources\layout\AD_GenericPopup.axml" />
+    <AndroidResource Include="Resources\menu\notification_menu.axml" />
+    <AndroidResource Include="Resources\values\ids.xml" />
+    <AndroidResource Include="Resources\layout\single_row_visitor.axml" />
+    <AndroidResource Include="Resources\layout\Popup_visitor.axml" />
+    <AndroidResource Include="Resources\layout\single_row_mail.axml" />
+    <AndroidResource Include="Resources\layout\QuizPreference.axml" />
+    <AndroidResource Include="Resources\layout\attempt_conn_popup.axml" />
+    <AndroidResource Include="Resources\drawable\circle_shape.axml" />
+    <AndroidResource Include="Resources\layout\details_grid_popup.axml" />
+    <AndroidResource Include="Resources\drawable\Calendar_Icon.png" />
+    <AndroidResource Include="Resources\layout\AD_No_Visitors.axml" />
+    <AndroidResource Include="Resources\layout\AD_Accepted.axml" />
+    <AndroidResource Include="Resources\layout\fragment_connections_each_item.axml" />
+    <AndroidResource Include="Resources\layout\fragment_pending.axml" />
+    <AndroidResource Include="Resources\layout\fragment_pending_each_item.axml" />
+    <AndroidResource Include="Resources\layout\AD_Accept.axml" />
+    <AndroidResource Include="Resources\layout\AD_Deny.axml" />
+    <AndroidResource Include="Resources\layout\fragment_watchlist_each_item.axml" />
+    <AndroidResource Include="Resources\layout\fragment_sent_each_item.axml" />
+    <AndroidResource Include="Resources\layout\fragment_mailDetails.axml" />
+    <AndroidResource Include="Resources\layout\single_row_mail_detail.axml" />
+    <AndroidResource Include="Resources\layout\setHeightPopup.axml" />
+    <AndroidResource Include="Resources\layout\getHeightPopup.axml" />
+    <AndroidResource Include="Resources\layout\fragment_meet.axml" />
+    <AndroidResource Include="Resources\layout\fragment_entourage.axml" />
+    <AndroidResource Include="Resources\layout\fragment_entourage_each_item.axml" />
+    <AndroidResource Include="Resources\layout\fragment_review.axml" />
+    <AndroidResource Include="Resources\layout\fragment_review_each_item.axml" />
+    <AndroidResource Include="Resources\layout\AD_AttemptConnection.axml" />
+    <AndroidResource Include="Resources\layout\HT_DemoPopup.axml" />
+    <AndroidResource Include="Resources\layout\HT_FirstLoad.axml" />
+    <AndroidResource Include="Resources\layout\HT_NimpController.axml" />
+    <AndroidResource Include="Resources\layout\HT_NimpControllerFrame.axml" />
+    <AndroidResource Include="Resources\drawable\Orange_border.axml" />
+    <AndroidResource Include="Resources\layout\Personality_test.axml" />
+    <AndroidResource Include="Resources\layout\HT_PersonalityResult.axml" />
+    <AndroidResource Include="Resources\layout\HT_NimpIntroPopup.axml" />
+    <AndroidResource Include="Resources\drawable\abs__spinner_ab_holo_light.xml" />
+    <AndroidResource Include="Resources\drawable\abs__spinner_ab_disabled_holo_light.9.png" />
+    <AndroidResource Include="Resources\drawable\abs__spinner_ab_pressed_holo_light.9.png" />
+    <AndroidResource Include="Resources\drawable\abs__spinner_ab_focused_holo_light.9.png" />
+    <AndroidResource Include="Resources\drawable\abs__list_selector_holo_light.xml" />
+    <AndroidResource Include="Resources\drawable\abs__list_selector_disabled_holo_light.9.png" />
+    <AndroidResource Include="Resources\drawable\abs__list_selector_background_transition_holo_light.xml" />
+    <AndroidResource Include="Resources\drawable\abs__list_focused_holo.9.png" />
+    <AndroidResource Include="Resources\drawable\abs__list_pressed_holo_light.9.png" />
+    <AndroidResource Include="Resources\drawable\abs__list_longpressed_holo.9.png" />
+    <AndroidResource Include="Resources\drawable\abs__menu_dropdown_panel_holo_light.9.png" />
+    <AndroidResource Include="Resources\drawable\ab__spinner_ab_default_holo_light.9.png" />
+    <AndroidResource Include="Resources\drawable\DD_Con_icn_watchlist_resized.png" />
+    <AndroidResource Include="Resources\drawable\DD_Con_icn_watchlist_hit_resized.png" />
+    <AndroidResource Include="Resources\drawable\DD_Con_icn_sent_resized.png" />
+    <AndroidResource Include="Resources\drawable\DD_Con_icn_sent_hit_resized.png" />
+    <AndroidResource Include="Resources\drawable\DD_Con_icn_received_resized.png" />
+    <AndroidResource Include="Resources\drawable\DD_Con_icn_received_hit_resized.png" />
+    <AndroidResource Include="Resources\drawable\DD_Con_icn_entourage_resized.png" />
+    <AndroidResource Include="Resources\drawable\DD_Con_icn_entourage_hit_resized.png" />
+    <AndroidResource Include="Resources\drawable\DD_Con_icn_connections_resized.png" />
+    <AndroidResource Include="Resources\drawable\DD_Con_icn_connections_hit_resized.png" />
+    <AndroidResource Include="Resources\layout\custom_spinner_meet.axml" />
+    <AndroidResource Include="Resources\layout\custom_spinner_ht.axml" />
+    <AndroidResource Include="Resources\drawable\buttonColor.axml" />
+    <AndroidResource Include="Resources\drawable\Button.9.png" />
+    <AndroidResource Include="Resources\layout\action_bar_linear.axml" />
+    <AndroidResource Include="Resources\drawable\DD_Header_icn_menu_boosts.png" />
+    <AndroidResource Include="Resources\drawable\DD_Header_icn_menu_meet.png" />
+    <AndroidResource Include="Resources\layout\facebook_albums.axml" />
+    <AndroidResource Include="Resources\layout\facebook_albums_each_item.axml" />
+    <AndroidResource Include="Resources\layout\facebook_albums_photos.axml" />
+    <AndroidResource Include="Resources\anim\fade_in.xml" />
+    <AndroidResource Include="Resources\anim\shrink.xml" />
+    <AndroidResource Include="Resources\anim\shrink_fade.xml" />
+    <AndroidResource Include="Resources\layout\galleryRelative.axml" />
+    <AndroidResource Include="Resources\layout\fragment_UserSauce.axml" />
+    <AndroidResource Include="Resources\drawable\DD_Boosts_icn_side_boosts_hit_resized.png" />
+    <AndroidResource Include="Resources\drawable\DD_Boosts_icn_side_boosts_resized.png" />
+    <AndroidResource Include="Resources\drawable\DD_Boosts_icn_side_inventory_hit_resized.png" />
+    <AndroidResource Include="Resources\drawable\DD_Boosts_icn_side_inventory_resized.png" />
+    <AndroidResource Include="Resources\drawable\DD_Boosts_icn_side_juicepack_hit_resized.png" />
+    <AndroidResource Include="Resources\drawable\DD_Boosts_icn_side_juicepack_resized.png" />
+    <AndroidResource Include="Resources\layout\AD_ConformBuyBoost.axml" />
+    <AndroidResource Include="Resources\layout\fragment_side_inventory_each_item.axml" />
+    <AndroidResource Include="Resources\layout\Zodiac_element.axml" />
+    <AndroidResource Include="Resources\layout\AD_SecondOpinion.axml" />
+    <AndroidResource Include="Resources\layout\AD_SecondOpinionResult.axml" />
+    <AndroidResource Include="Resources\drawable\DD_icn_question.png" />
+    <AndroidResource Include="Resources\drawable\relative_selector.axml" />
+    <AndroidResource Include="Resources\drawable\relative_background.axml" />
+    <AndroidResource Include="Resources\layout\AD_Review.axml" />
+    <AndroidResource Include="Resources\layout\AD_BuyFlirtJuice.axml" />
+    <AndroidResource Include="Resources\layout\AD_BuyFlirtJuice_each_item.axml" />
+    <AndroidResource Include="Resources\layout\Ad_BuyFlirtGold_each_item.axml" />
+    <AndroidResource Include="Resources\layout\AD_LowFlirtJuice.axml" />
+    <AndroidResource Include="Resources\layout\AD_LowFlirtGold.axml" />
+    <AndroidResource Include="Resources\layout\fragment_side_boost_each_item.axml" />
+    <AndroidResource Include="Resources\layout\AD_Update_profile.axml" />
+    <AndroidResource Include="Resources\layout\AD_Confirm_Purchase.axml" />
+    <AndroidResource Include="Resources\layout\AD_SecondOpinionFinalResult.axml" />
+    <AndroidResource Include="Resources\layout\Flyout.axml" />
+    <AndroidResource Include="Resources\drawable\default_cover.jpg" />
+    <AndroidResource Include="Resources\layout-mdpi\galleryRelative.axml" />
+    <AndroidResource Include="Resources\layout\leftFlyout.axml" />
+    <AndroidResource Include="Resources\drawable\ad_selectable_background.xml" />
+    <AndroidResource Include="Resources\drawable\selected_background.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Resources\drawable-xhdpi\" />
+    <Folder Include="Fragments\" />
+    <Folder Include="Resources\menu\" />
+    <Folder Include="Core\" />
+    <Folder Include="NIMP\" />
+    <Folder Include="Adapters\" />
+    <Folder Include="Common\" />
+    <Folder Include="Resources\anim\" />
+    <Folder Include="ImageHelper\" />
+    <Folder Include="Resources\layout-mdpi\" />
+  </ItemGroup>
+  <ItemGroup>
+    <XamarinComponentReference Include="json.net">
+      <Version>4.5.11</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="radialprogress">
+      <Version>1.0.1</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="xamarin.inappbilling">
+      <Version>1.5</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Xamarin.Facebook\Xamarin.Facebook.csproj">
+      <Project>{33B8DF4F-E480-4B97-8DA1-BEB89CA6B644}</Project>
+      <Name>Xamarin.Facebook</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:background="@color/background_color">
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1"
+        android:layout_margin="10dp">
+        <TextView
+            android:text="Confirm Purchase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff474444"
+            android:id="@+id/tv_title"
+            android:layout_margin="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true" />
+        <Button
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/btn_close"
+            android:background="@drawable/DD_Splash_btn_close"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:id="@+id/view1"
+        android:background="@color/title_divider_white"
+        android:layout_marginBottom="8dp" />
+    <TextView
+        android:inputType="textMultiLine|textNoSuggestions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black_grey"
+        android:id="@+id/tv_confirm"
+        android:text="Are you sure to purchase this one full Flirt Juice container (100 FJ) for 10 Flirt Gold?"
+        android:layout_margin="15dp" />
+    <Button
+        android:text="BUY"
+        android:layout_width="150dp"
+        android:layout_height="38dp"
+        android:id="@+id/btn_buy"
+        android:background="#33CCFF"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:textSize="15dp"
+        android:layout_marginBottom="0.0dp"
+        android:textColor="@color/solid_white" />
+</LinearLayout>

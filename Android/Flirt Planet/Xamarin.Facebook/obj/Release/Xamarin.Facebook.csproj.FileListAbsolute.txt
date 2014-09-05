@@ -1,0 +1,6 @@
+D:\Project\VIshal\Flirt Planet\Flirt Planet\Xamarin.Facebook\bin\Release\Xamarin.Facebook.dll
+D:\Project\VIshal\Flirt Planet\Flirt Planet\Xamarin.Facebook\obj\Release\Xamarin.Facebook.dll
+D:\Data\Flirt Planet\Xamarin.Facebook\bin\Release\Xamarin.Facebook.dll
+D:\Data\Flirt Planet\Xamarin.Facebook\obj\Release\Xamarin.Facebook.dll
+D:\Project\VIshal\28-7\Flirt Planet\Xamarin.Facebook\bin\Release\Xamarin.Facebook.dll
+D:\Project\VIshal\28-7\Flirt Planet\Xamarin.Facebook\obj\Release\Xamarin.Facebook.dll

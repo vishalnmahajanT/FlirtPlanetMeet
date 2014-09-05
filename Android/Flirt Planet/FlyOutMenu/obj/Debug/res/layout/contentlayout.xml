@@ -1,0 +1,15 @@
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:id="@+id/FlyOutContent" android:background="#ffffffff" xmlns:android="http://schemas.android.com/apk/res/android"><View android:layout_width="fill_parent" android:layout_height="1dp" android:id="@+id/view1" android:background="#ff404040" /><FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/fl_slideInFrameLayout" android:background="#ff404040"><RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout1" android:background="#ff323232"><ImageView android:layout_width="49dp" android:layout_height="40dp" android:id="@+id/MenuButton" android:layout_margin="4dp" android:background="@drawable/action_menu" /><ImageView android:layout_width="40dp" android:layout_height="40dp" android:id="@+id/ab_flag" android:background="@drawable/dd_profile_flag_unconnect" android:paddingLeft="4dp" android:layout_toRightOf="@id/MenuButton" android:layout_centerHorizontal="true" android:layout_marginLeft="10dp" android:layout_centerInParent="true" /><ImageView android:layout_width="40dp" android:layout_height="40dp" android:id="@+id/ab_icon" android:background="@drawable/dd_header_logosmall" android:paddingLeft="4dp" android:layout_toRightOf="@id/MenuButton" android:gravity="center" android:layout_centerHorizontal="true" android:layout_marginLeft="80dp" android:layout_centerInParent="true" /><ImageView android:layout_width="40dp" android:layout_height="40dp" android:id="@+id/ab_profile" android:background="@drawable/dd_header_icn_profile" android:paddingLeft="4dp" android:layout_toRightOf="@id/ab_icon" android:layout_centerHorizontal="true" android:layout_marginLeft="50dp" android:layout_centerInParent="true" /><ImageView android:layout_width="40dp" android:layout_height="40dp" android:id="@+id/ab_not" android:background="@drawable/dd_header_icn_notification" android:paddingLeft="4dp" android:layout_gravity="right" android:layout_toRightOf="@id/ab_profile" android:layout_centerHorizontal="true" android:layout_marginLeft="10dp" android:layout_centerInParent="true" /><!--   <TextView
+                android:text="Flirt Planet"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:id="@+id/textView2"
+                android:gravity="center"
+                android:textColor="#fff6f6f6"
+                android:layout_marginLeft="8dp" /> --></RelativeLayout></FrameLayout><!--
+    <fragment
+        class="flirtplanet.FragmentSettings"
+        android:id="@+id/fragment_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+        --></LinearLayout>

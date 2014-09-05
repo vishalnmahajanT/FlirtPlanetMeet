@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffe0e0e0">
+    <TextView
+        android:text="Permanent Boosts"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:id="@+id/tv_permanena_boosts"
+        android:textColor="#ff474444"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp" />
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/permanant_boost_gridview"
+        android:layout_marginTop="5dp"
+        android:numColumns="2" />
+</LinearLayout>

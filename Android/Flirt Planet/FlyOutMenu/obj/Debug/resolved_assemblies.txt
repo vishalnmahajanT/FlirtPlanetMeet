@@ -1,0 +1,6 @@
+D:\Data\Flirt Planet\FlyOutMenu\bin\Debug\FlyOutMenu.dll
+D:\Data\Flirt Planet\Components\GCMClient-1.0\lib\android\GCM.Client.dll
+D:\Data\Flirt Planet\FlyOutMenu\Core\bin\iPhone\Debug\Newtonsoft.Json.dll
+D:\Data\Flirt Planet\Components\radialprogress-1.0.1\lib\android\RadialProgress.Android.dll
+D:\Data\Flirt Planet\Xamarin.Facebook\bin\Debug\Xamarin.Facebook.dll
+D:\Data\Flirt Planet\Components\xamarin.inappbilling-1.5\lib\android\Xamarin.InAppBilling.dll

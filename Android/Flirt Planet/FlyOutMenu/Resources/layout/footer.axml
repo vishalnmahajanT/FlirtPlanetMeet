@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_below="@+id/view1"
+    android:padding="10dp">
+    <TextView
+        android:id="@+id/tv_goalComplete"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/view1"
+        android:gravity="left"
+        android:text="Completed"
+        android:textColor="@color/text_grey" />
+    <TextView
+        android:id="@+id/tv_goalsInfo"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_below="@+id/textView4"
+        android:text="Complete goals to earn Flirt juice"
+        android:textColor="@color/text_grey" />
+    <TextView
+        android:id="@+id/tv_confirmAvatarPhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:linksClickable="true"
+        android:text="- Confirm your avatar photo"
+        android:textColor="@color/aqua_blue" />
+    <TextView
+        android:id="@+id/tv_haveFivePhotos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:linksClickable="true"
+        android:text="- Have five photos in gallery"
+        android:textColor="@color/aqua_blue" />
+    <TextView
+        android:id="@+id/tv_completeProfileDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:linksClickable="true"
+        android:text="- Complete profile details"
+        android:textColor="@color/aqua_blue" />
+    <TextView
+        android:id="@+id/tv_completeProfileInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:linksClickable="true"
+        android:text="- Complete profile info"
+        android:textColor="@color/aqua_blue" />
+    <TextView
+        android:id="@+id/tv_confirmPersonalQuiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:linksClickable="true"
+        android:text="- Confirm personal quizzes"
+        android:textColor="@color/aqua_blue" />
+</LinearLayout>

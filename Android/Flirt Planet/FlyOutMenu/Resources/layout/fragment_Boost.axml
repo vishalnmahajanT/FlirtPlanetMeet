@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linearLayout1"
+    android:background="@color/background_color">
+    <TextView
+        android:text="Boosts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_main_title"
+        android:gravity="center_horizontal"
+        android:textColor="#ff474444"
+        android:typeface="normal"
+        android:textSize="20dp"
+        android:layout_marginTop="8dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/view2"
+        android:background="@color/solid_white" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_color"
+        android:id="@+id/linearLayout2"
+        android:padding="@dimen/abi_list_padding"
+        style="@style/FlirtTheme"
+        android:measureWithLargestChild="true">
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:id="@+id/btn_side_boosts"
+            android:src="@drawable/DD_Boosts_icn_side_boosts_resized"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:scaleType="centerInside"
+            android:background="@color/transparent"
+            android:layout_marginTop="2dp"
+            android:layout_gravity="bottom" />
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:id="@+id/btn_side_inventory"
+            android:src="@drawable/DD_Boosts_icn_side_inventory_resized"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:background="@color/transparent"
+            android:layout_marginTop="2dp"
+            android:layout_gravity="bottom" />
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:id="@+id/btn_side_juicepack"
+            android:src="@drawable/DD_Boosts_icn_side_juicepack_resized"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:background="@color/transparent"
+            android:layout_marginTop="2dp"
+            android:layout_gravity="bottom" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/view1"
+        android:background="@color/dark_grey" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_boost_container" />
+</LinearLayout>

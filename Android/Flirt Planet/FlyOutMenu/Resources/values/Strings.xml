@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, Click Me!</string>
+	<string name="app_name">Flirt Planet</string>
+	<string name="findMe_prompt">Distance</string>
+	<string name="asl">24 Male Straight Mumbai</string>
+	<string name="action_profile">Profile</string>
+  <string name="action_pending">Pending</string>
+  
+  <string name="DrawerOpen">Open</string>
+  <string name="DrawerClose">Close</string>
+  <string-array name="PlanetsArray">
+    <item>Mercury</item>
+    <item>Venus</item>
+    <item>Earth</item>
+    <item>Mars</item>
+    <item>Jupiter</item>
+    <item>Saturn</item>
+    <item>Uranus</item>
+    <item>Neptune</item>
+  </string-array>
+  <string name="connection_error">Unable to connect to the server. Please try again.</string>
+
+  <string name="app_not_available">Sorry, there\'s no web browser available</string>
+  <string name="sliding_pane_layout_summary">This activity illustrates the use of sliding panes. The content pane may be slid to one side on narrow devices to reveal the left pane used to select content. Sliding panes can be used to fit a UI intended for wider screens in a smaller space. Tapping the Action Bar\'s Up button at the left side of the bar will navigate up in the hierarchy, represented by the left pane. If you rotate the device to landscape mode, on most devices you will see that both panes fit together side by side with no sliding necessary.</string>
+    <string name="cancelled">Cancelled</string>
+    <string name="permission_not_granted">Unable to perform selected action because permissions were not granted.</string>
+    <string name="reward_message">Thank you for taking the time to tell us about your preferences! These will be used to help calculate your compatibility with potential matches!</string>
+	<string name="new_reward_message">Thank you for taking the time to tell us about your preferences! These will be used to help calculate your compatibility with potential matches! We have given you 40 Flirt Juice as a reward!</string>
+    <string name="quiz_taken">PREFERENCES QUIZ TAKEN!</string>
+    <string name="success">Success</string>
+	<string name="ok">OK</string>
+    <string name="successfully_posted_post">Successfully posted \'%1$s\'.\nPost ID: %2$s</string>
+    <string name="status_update">Updating status for %1$s at %2$s</string>
+    <string name="photo_post">Photo Post</string>
+    <string name="you_picked">You picked:</string>
+    <string name="no_friends_selected">&lt;No friends selected&gt;</string>
+    <string name="no_place_selected">&lt;No place selected&gt;</string>
+    <string name="pick_seattle_place">Pick a Seattle Place</string>
+    <string name="app_id">331457147001081</string>
+    <string name="error">ERROR</string>
+     <string name="Validate_prefrence">You have not yet answered all of the questions. Please go back and answer any questions you missed.</string>
+    <string-array name="gender_array">
+       <item>Male</item>
+       <item>Female</item>
+    </string-array>
+	
+	<string-array name="orientation_array">
+        <item>Straight</item>
+        <item>Gay</item>
+        <item>Bisexual</item>
+    </string-array>
+
+    <string name="maxFJPacksUsed">Maximum number of flirt juice packs used today. Try again tomorrow!</string>
+    <string name="noFJPacks">No flirt juice packs available to use.</string>
+    <string name="purchaseError">Google Play transaction failed. Please try again.</string>
+    <string name="internetError">Unable to connect with the server. Check your internet connection and try again.</string>
+
+</resources>

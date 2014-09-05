@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:orientation="vertical"
+    p1:minWidth="25px"
+    p1:minHeight="25px"
+    p1:layout_width="match_parent"
+    p1:layout_height="wrap_content"
+    p1:id="@+id/linearLayout1">
+    <TextView
+        p1:text="Daily Bonus"
+        p1:textAppearance="?android:attr/textAppearanceMedium"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/tv_dailybonus" />
+    <View
+        p1:layout_width="match_parent"
+        p1:layout_height="1dp"
+        p1:id="@+id/view1"
+        p1:background="#ffffffff" />
+    <TextView
+        p1:text="Check in each day for an increasing daily bonus !"
+        p1:textAppearance="?android:attr/textAppearanceSmall"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/tv_desc"
+        p1:layout_marginLeft="5dp" />
+    <LinearLayout
+        p1:orientation="horizontal"
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/linearLayout2"
+        p1:showDividers="none"
+        p1:layout_marginTop="20dp"
+        p1:layout_marginBottom="30dp">
+        <TextView
+            p1:text="Day 1"
+            p1:textAppearance="?android:attr/textAppearanceSmall"
+            p1:layout_width="wrap_content"
+            p1:layout_height="match_parent"
+            p1:id="@+id/tv_day1"
+            p1:layout_marginLeft="10dp" />
+        <TextView
+            p1:text="Day 2"
+            p1:textAppearance="?android:attr/textAppearanceSmall"
+            p1:layout_width="wrap_content"
+            p1:layout_height="match_parent"
+            p1:id="@+id/tv_day2"
+            p1:layout_marginLeft="30dp" />
+        <TextView
+            p1:text="Day 3"
+            p1:textAppearance="?android:attr/textAppearanceSmall"
+            p1:layout_width="wrap_content"
+            p1:layout_height="match_parent"
+            p1:id="@+id/tv_day3"
+            p1:layout_marginLeft="30dp" />
+        <TextView
+            p1:text="Day 4"
+            p1:textAppearance="?android:attr/textAppearanceSmall"
+            p1:layout_width="wrap_content"
+            p1:layout_height="match_parent"
+            p1:id="@+id/tv_day4"
+            p1:layout_marginLeft="30dp" />
+        <TextView
+            p1:text="Day 5"
+            p1:textAppearance="?android:attr/textAppearanceSmall"
+            p1:layout_width="wrap_content"
+            p1:layout_height="match_parent"
+            p1:id="@+id/tv_day5"
+            p1:layout_marginLeft="30dp" />
+    </LinearLayout>
+    <LinearLayout
+        p1:orientation="horizontal"
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/linearLayout3"
+        p1:layout_marginBottom="20dp">
+        <ImageView
+            p1:src="@drawable/DD_icn_drop"
+            p1:layout_width="wrap_content"
+            p1:layout_height="match_parent"
+            p1:id="@+id/iv_day1"
+            p1:layout_marginLeft="10dp" />
+        <ImageView
+            p1:src="@drawable/DD_icn_drop"
+            p1:layout_width="wrap_content"
+            p1:layout_height="match_parent"
+            p1:id="@+id/iv_day2"
+            p1:layout_marginLeft="30dp" />
+        <ImageView
+            p1:src="@drawable/DD_icn_drop"
+            p1:layout_width="wrap_content"
+            p1:layout_height="match_parent"
+            p1:id="@+id/iv_day3"
+            p1:layout_marginLeft="30dp" />
+        <ImageView
+            p1:src="@drawable/DD_icn_drop"
+            p1:layout_width="wrap_content"
+            p1:layout_height="match_parent"
+            p1:id="@+id/iv_day4"
+            p1:layout_marginLeft="30dp" />
+        <ImageView
+            p1:src="@drawable/DD_icn_drop"
+            p1:layout_width="wrap_content"
+            p1:layout_height="match_parent"
+            p1:id="@+id/iv_day5"
+            p1:layout_marginLeft="30dp" />
+    </LinearLayout>
+    <LinearLayout
+        p1:orientation="horizontal"
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/linearLayout4">
+        <TextView
+            p1:text="Receive 0 FJ"
+            p1:textAppearance="?android:attr/textAppearanceSmall"
+            p1:layout_width="50dp"
+            p1:layout_height="match_parent"
+            p1:id="@+id/tv_day1FJ" />
+        <TextView
+            p1:text="Receive 10 FJ"
+            p1:textAppearance="?android:attr/textAppearanceSmall"
+            p1:layout_width="50dp"
+            p1:layout_height="match_parent"
+            p1:id="@+id/textView2" />
+        <TextView
+            p1:text="Receive 20 FJ"
+            p1:textAppearance="?android:attr/textAppearanceSmall"
+            p1:layout_width="50dp"
+            p1:layout_height="match_parent"
+            p1:id="@+id/textView3" />
+        <TextView
+            p1:text="Receive 50 FJ"
+            p1:textAppearance="?android:attr/textAppearanceSmall"
+            p1:layout_width="50dp"
+            p1:layout_height="match_parent"
+            p1:id="@+id/textView4" />
+        <TextView
+            p1:text="Receive 100 FJ"
+            p1:textAppearance="?android:attr/textAppearanceSmall"
+            p1:layout_width="50dp"
+            p1:layout_height="match_parent"
+            p1:id="@+id/textView5" />
+    </LinearLayout>
+    <Button
+        p1:text="Continue"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/b_continue"
+        p1:layout_gravity="bottom" />
+</LinearLayout>

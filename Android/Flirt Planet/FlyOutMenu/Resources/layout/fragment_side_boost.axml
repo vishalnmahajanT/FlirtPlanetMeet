@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scrollView1"
+    android:background="@color/background_color">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl"
+        android:background="@color/background_color">
+        <TextView
+            android:text="Consumable Boosts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_heading"
+            android:textColor="#ff474444"
+            android:textSize="23dp"
+            android:layout_marginTop="5dp" />
+        <flirtplanet.GridViewNoScroll
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/boostgridView"
+            android:numColumns="auto_fit"
+            android:layout_gravity="center"
+            android:layout_below="@id/tv_heading"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+        <TextView
+            android:text="Permanent Boosts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_permanent_boosts"
+            android:textColor="#ff474444"
+            android:textSize="23dp"
+            android:layout_below="@id/boostgridView" />
+        <flirtplanet.GridViewNoScroll
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/permanant_boost_gridview"
+            android:numColumns="auto_fit"
+            android:layout_below="@id/tv_permanent_boosts"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</ScrollView>

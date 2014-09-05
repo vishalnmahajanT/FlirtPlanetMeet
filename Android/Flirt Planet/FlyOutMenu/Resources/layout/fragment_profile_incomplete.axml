@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:minWidth="25px"
+    p1:minHeight="25px"
+    p1:layout_width="match_parent"
+    p1:layout_height="match_parent"
+    p1:id="@+id/scrollView1">
+    <LinearLayout
+        p1:orientation="vertical"
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="match_parent"
+        p1:layout_height="match_parent">
+        <FrameLayout
+            p1:minWidth="25px"
+            p1:minHeight="25px"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/frameLayout1">
+            <ImageView
+                p1:src="@android:drawable/ic_menu_gallery"
+                p1:layout_width="match_parent"
+                p1:layout_height="match_parent"
+                p1:id="@+id/imageView1" />
+        </FrameLayout>
+        <LinearLayout
+            p1:orientation="vertical"
+            p1:minWidth="25px"
+            p1:minHeight="25px"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/linearLayout2">
+            <TextView
+                p1:text="Name"
+                p1:textAppearance="?android:attr/textAppearanceMedium"
+                p1:layout_width="match_parent"
+                p1:layout_height="wrap_content"
+                p1:id="@+id/pofile_text"
+                p1:layout_gravity="center" />
+            <LinearLayout
+                p1:orientation="horizontal"
+                p1:layout_width="match_parent"
+                p1:layout_height="30dp"
+                p1:id="@+id/relativeLayout3"
+                p1:minWidth="25px"
+                p1:minHeight="25px"
+                p1:layout_gravity="center"
+                p1:paddingLeft="110dp">
+                <ImageView
+                    p1:src="@drawable/DD_profile_icn_reviews_mobile"
+                    p1:layout_width="30dp"
+                    p1:layout_height="30dp"
+                    p1:id="@+id/im_review" />
+                <ImageView
+                    p1:src="@drawable/DD_profile_icn_matching_sauce_mobile"
+                    p1:layout_width="30dp"
+                    p1:layout_height="30dp"
+                    p1:id="@+id/im_libra" />
+                <ImageView
+                    p1:src="@drawable/DD_profile_icn_connections_mobile"
+                    p1:layout_width="30dp"
+                    p1:layout_height="30dp"
+                    p1:id="@+id/imageView2" />
+                <ImageView
+                    p1:src="@drawable/DD_Header_icn_tickbox"
+                    p1:layout_width="10dp"
+                    p1:layout_height="10dp"
+                    p1:id="@+id/privacy" />
+            </LinearLayout>
+            <LinearLayout
+                p1:orientation="horizontal"
+                p1:layout_width="match_parent"
+                p1:layout_height="wrap_content"
+                p1:id="@+id/relativeLayout3"
+                p1:minWidth="25px"
+                p1:minHeight="25px"
+                p1:layout_gravity="center"
+                p1:paddingLeft="50dp">
+                <TextView
+                    p1:text="@string/asl"
+                    p1:textAppearance="?android:attr/textAppearanceSmall"
+                    p1:layout_width="wrap_content"
+                    p1:layout_height="wrap_content"
+                    p1:id="@+id/asl_text" />
+                <ImageView
+                    p1:src="@drawable/DD_icn_edit"
+                    p1:layout_width="20dp"
+                    p1:layout_height="20dp"
+                    p1:id="@+id/edit" />
+            </LinearLayout>
+            <View
+                p1:layout_width="fill_parent"
+                p1:layout_height="1dp"
+                p1:id="@+id/view1"
+                p1:background="@color/divider_gray"
+                p1:layout_below="@id/TextView02"
+                p1:layout_marginLeft="10dp"
+                p1:layout_marginRight="16dp"
+                p1:layout_marginBottom="8dp" />
+            <LinearLayout
+                p1:orientation="horizontal"
+                p1:layout_width="match_parent"
+                p1:layout_height="wrap_content"
+                p1:id="@+id/relativeLayout3"
+                p1:minWidth="25px"
+                p1:minHeight="25px"
+                p1:layout_gravity="center"
+                p1:paddingLeft="50dp">
+                <TextView
+                    p1:text="Photos"
+                    p1:textAppearance="?android:attr/textAppearanceSmall"
+                    p1:layout_width="wrap_content"
+                    p1:layout_height="wrap_content"
+                    p1:id="@+id/asl_text" />
+                <ImageView
+                    p1:src="@drawable/DD_FlirtMail_icn_new_message"
+                    p1:layout_width="30dp"
+                    p1:layout_height="30dp"
+                    p1:id="@+id/edit" />
+            </LinearLayout>
+            <ImageView
+                p1:src="@drawable/DD_Header_icn_pending"
+                p1:layout_width="50dp"
+                p1:layout_height="50dp"
+                p1:id="@+id/im_gallery" />
+            <TextView
+                p1:text="Details"
+                p1:textAppearance="?android:attr/textAppearanceSmall"
+                p1:layout_width="match_parent"
+                p1:layout_height="wrap_content"
+                p1:gravity="center" />
+        </LinearLayout>
+        <TableLayout
+            p1:minWidth="25px"
+            p1:minHeight="25px"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/tableLayout1">
+            <TableRow
+                p1:id="@+id/tableRow1">
+            </TableRow>
+            <TableRow
+                p1:id="@+id/tableRow2">
+            </TableRow>
+            <TableRow
+                p1:id="@+id/tableRow3">
+            </TableRow>
+        </TableLayout>
+        <View
+            p1:layout_width="fill_parent"
+            p1:layout_height="1dp"
+            p1:id="@+id/view1"
+            p1:background="@color/divider_gray"
+            p1:layout_marginLeft="10dp"
+            p1:layout_marginRight="16dp"
+            p1:layout_marginBottom="8dp" />
+        <TextView
+            p1:text="Info"
+            p1:textAppearance="?android:attr/textAppearanceMedium"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:gravity="center" />
+        <RelativeLayout
+            p1:minWidth="25px"
+            p1:minHeight="25px"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:layout_marginLeft="10dp"
+            p1:id="@+id/relativeLayout4">
+            <TextView
+                p1:text="About Me"
+                p1:textAppearance="?android:attr/textAppearanceMedium"
+                p1:layout_width="wrap_content"
+                p1:layout_height="wrap_content"
+                p1:id="@+id/tv_aboutme" />
+            <ImageView
+                p1:src="@drawable/DD_icn_edit"
+                p1:layout_width="20dp"
+                p1:layout_height="20dp"
+                p1:id="@+id/imageView3"
+                p1:layout_toRightOf="@id/tv_aboutme"
+                p1:layout_alignParentRight="true"
+                p1:paddingLeft="200dp" />
+        </RelativeLayout>
+        <EditText
+            p1:inputType="textMultiLine"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/editText1"
+            p1:text="Tell us about you"
+            p1:textAppearance="?android:attr/textAppearanceSmall" />
+    </LinearLayout>
+</ScrollView>

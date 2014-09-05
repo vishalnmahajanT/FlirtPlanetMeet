@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:gravity="center">
+    <TextView
+        android:text="Zodiac"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1"
+        android:gravity="center"
+        android:textColor="@color/black_grey"
+        android:padding="10dp"
+        android:layout_gravity="center" />
+    <TextView
+        android:text="scorpio"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_zodiac"
+        android:gravity="center"
+        android:textColor="@color/black_grey"
+        android:layout_gravity="center" />
+    <ImageView
+        android:src="@drawable/DD_MS_icn_zodiac_scorpio"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/im_zodiac" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1"
+        android:layout_marginTop="7dp">
+        <TextView
+            android:text="Preferences Quiz"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_preferences"
+            android:textColor="@color/black_grey"
+            android:layout_marginLeft="5dp"
+            android:gravity="center" />
+        <ImageButton
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/im_EditPreference"
+            android:src="@drawable/DD_icn_edit"
+            android:focusable="true"
+            android:scaleType="centerInside"
+            android:background="@color/transparent"
+            android:layout_gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp" />
+    </LinearLayout>
+</LinearLayout>

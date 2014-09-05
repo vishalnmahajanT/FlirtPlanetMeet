@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:background="@color/background_color">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/rootLayout"
+        android:background="@color/background_color">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/relativeLayout1"
+            android:layout_gravity="center"
+            android:layout_margin="10dp">
+            <TextView
+                android:text="Matching Sauce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_matchingHeader"
+                android:layout_margin="2dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black_grey"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+            <ImageView
+                android:src="@drawable/DD_MS_icn_matching_sauce_gray"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/iv_sauceHeaderIcon"
+                android:layout_centerHorizontal="true"
+                android:layout_toLeftOf="@id/tv_matchingHeader" />
+        </RelativeLayout>
+        <include
+            layout="@layout/cell_divide_line"
+            android:id="@+id/include1" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout1">
+            <include
+                layout="@layout/Zodiac_element"
+                android:id="@+id/include2" />
+            <include
+                layout="@layout/Personality_test"
+                android:id="@+id/include3" />
+        </LinearLayout>
+        <include
+            layout="@layout/cell_divide_line"
+            android:id="@+id/include4" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout1">
+            <TextView
+                android:text="Flirt Style"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_fs"
+                android:textColor="@color/black_grey"
+                android:padding="10dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_flirtStyle"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black_grey" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,5 @@
+[assembly:global::Android.Runtime.NamespaceMapping (Java = "com.facebook", Managed="Xamarin.FacebookBinding")]
+[assembly:global::Android.Runtime.NamespaceMapping (Java = "com.facebook.android", Managed="Xamarin.FacebookBinding.XAndroid")]
+[assembly:global::Android.Runtime.NamespaceMapping (Java = "com.facebook.internal", Managed="Xamarin.FacebookBinding.Internal")]
+[assembly:global::Android.Runtime.NamespaceMapping (Java = "com.facebook.model", Managed="Xamarin.FacebookBinding.Model")]
+[assembly:global::Android.Runtime.NamespaceMapping (Java = "com.facebook.widget", Managed="Xamarin.FacebookBinding.Widget")]

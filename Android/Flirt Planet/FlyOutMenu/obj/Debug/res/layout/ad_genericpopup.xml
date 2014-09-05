@@ -1,0 +1,26 @@
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/ll_generic_popup" android:background="@color/background_color" xmlns:android="http://schemas.android.com/apk/res/android"><LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10dp"><TextView android:text="Header" android:textAppearance="?android:attr/textAppearanceSmall" android:layout_height="wrap_content" android:id="@+id/tv_header" android:padding="10dp" android:textColor="@color/black_grey" android:layout_weight="1" android:layout_width="0dp" /><ImageView android:src="@drawable/dd_splash_btn_close" android:layout_width="25dp" android:layout_height="25dp" android:id="@+id/iv_close" android:layout_gravity="center" /></LinearLayout><View android:layout_width="match_parent" android:layout_height="1dp" android:id="@+id/view1" android:background="@color/solid_white" /><TextView android:text="Message body" android:textAppearance="?android:attr/textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/tv_messageBody" android:padding="10dp" android:textColor="@color/black_grey" /><!--
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_color">
+        <Button
+            android:text="OK"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_OK"
+            android:layout_gravity="left"
+            android:background="@color/btn_bg_blue_normal"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1" />
+        <Button
+            android:text="CANCEL"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_cancel"
+            android:layout_weight="1"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="right" />
+    </LinearLayout>
+
+    --><Button android:id="@+id/button_OK" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="OK" android:background="@color/aqua_blue" android:gravity="center" android:minWidth="150dp" android:textColor="@color/solid_white" android:layout_margin="5dp" android:layout_gravity="center" /></LinearLayout>
